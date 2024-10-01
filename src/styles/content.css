@@ -1,0 +1,147 @@
+.content-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .video-section {
+    margin-bottom: 50px;
+  }
+  
+  .video-player {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Espacio entre las imágenes */
+}
+
+.custom-image-one {
+    margin-top: 50px; /* Distancia entre el video e imagen 1 */
+    margin-bottom: 50px; /* Distancia entre la imagen 1 y "Nuestros Servicios" */
+}
+
+.custom-image-two {
+    margin-top: 100px; /* Distancia entre el video e imagen 2 */
+    margin-bottom: 100px; /* Distancia entre la imagen 2 y "Nuestros Servicios" */
+    margin-left: 20px; /* Ajusta la separación de la imagen 2 */
+}
+
+  /* Estilos para la sección de servicios */
+  .services-section {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .service-card {
+    padding:5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para la galería de imágenes */
+  .custom-gallery-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+  
+  .main-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .cta-button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .side-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .side-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  
+  /* Estilos para el formulario */
+  .contact-form {
+    margin-top: 40px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 48%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form textarea {
+    width: 100%;
+    height: 100px;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
