@@ -11,8 +11,10 @@
     padding: 10px 20px;
     margin: 0;
     width: 100%;
-    padding-right: 10%;
+    position: fixed;
+    z-index: 1000;
   }
+
   
   .header-left {
     display: flex;
