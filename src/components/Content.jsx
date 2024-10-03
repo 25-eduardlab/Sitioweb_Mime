@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/content.css';  // Importamos el archivo de estilos
 import Image1 from '../img/como.jpeg'; // Importa la imagen del logo
 import Image2 from '../img/hola.png'; // Importa la imagen del logo
-import Image3 from '../img/Linux.jpg'; // Importa la imagen del logo
+import Image3 from '../img/leon.jpeg'; // Importa la imagen del logo
 import Image4 from '../img/arbol.jpeg'; // Importa la imagen del logo
 import Image5 from '../img/savana.jpeg'; // Importa la imagen del logo
 import Image6 from '../img/bosque.jpeg'; // Importa la imagen del logo
