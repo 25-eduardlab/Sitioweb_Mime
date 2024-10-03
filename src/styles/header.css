@@ -8,8 +8,8 @@
     justify-content:space-between;
     align-items: center;
     background-color: #193357; /* Azul */
-    padding: 10px 20px;
-    margin: 0;
+    padding: 0px 20px;
+    margin:0;
     width: 100%;
     position: fixed;
     z-index: 1000;
@@ -37,12 +37,13 @@
     gap: 20px;
     font-size: 16px;
     color: #ffffff;
+    padding-right: 70px;
   }
   
   .header-right span{
     cursor: pointer;
-    margin: 0 20px;
-    font-size: 20px;
+    margin: 0 7px;
+    font-size: 1.1rem;
     color: #eee;
     font-family: nazation ;
     font-weight: 800;

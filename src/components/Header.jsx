@@ -4,7 +4,7 @@ import logo from '../img/mime_logo.png'; // Importa la imagen del logo
 
 const Header = () => {
   return (
-    <header className="header-container">
+    <header className="header-container" id="Cabezera">
       <div className="header-left">
         <img src={logo} alt="Logo" className="logo" />
         <span className="header-title"></span>
@@ -18,7 +18,6 @@ const Header = () => {
       </div>
     </header>
   );
-  
 };
 
 export default Header;
