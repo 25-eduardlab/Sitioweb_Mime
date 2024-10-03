@@ -1,13 +1,13 @@
 import React from 'react';
 import '../styles/header.css'; // Importa los estilos de la cabecera
-import logo from '../img/mime.png'; // Importa la imagen del logo
+import logo from '../img/mime_logo.png'; // Importa la imagen del logo
 
 const Header = () => {
   return (
     <header className="header-container">
       <div className="header-left">
         <img src={logo} alt="Logo" className="logo" />
-        <span className="header-title">MIME</span>
+        <span className="header-title"></span>
       </div>
       <div className="header-right">
         <span>Inicio</span>

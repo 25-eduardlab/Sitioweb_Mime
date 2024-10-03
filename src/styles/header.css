@@ -1,14 +1,21 @@
 /* header.css */
-
+@font-face {
+  font-family: nazation;
+  src: url("../fonts/nasalization-rg.otf");
+}
 .header-container {
     display: flex;
     justify-content:space-between;
     align-items: center;
+<<<<<<< HEAD
     background-color: #090a0a; /* Azul */
+=======
+    background-color: #193357; /* Azul */
+>>>>>>> origin/cristhian
     padding: 10px 20px;
     margin: 0;
-    padding-right: 5vw;
     width: 100%;
+    padding-right: 10%;
   }
   
   .header-left {
@@ -17,7 +24,7 @@
   }
   
   .logo {
-    width: 8vw;
+    width: 250px;
     margin-right: 15px;
   }
   
@@ -25,14 +32,6 @@
     color: #ffffff;
     font-weight: bold;
     font-size: 3vw;
-  }
-  
-  .search-input {
-    width: 400px;
-    padding: 8px;
-    border-radius: 20px;
-    border: none;
-    font-size: 16px;
   }
   
   .header-right {
@@ -44,10 +43,10 @@
   
   .header-right span{
     cursor: pointer;
-    margin: 0 7px;
-    font-size: 0.9rem;
+    margin: 0 20px;
+    font-size: 20px;
     color: #eee;
-    font-family: inherit;
+    font-family: nazation ;
     font-weight: 800;
     position: relative;
     text-transform: uppercase;
