@@ -8,6 +8,7 @@ const App = () => {
     <>
       <Header />
       <Content />
+      
       {/* Aquí puedes agregar más componentes */}
     </>
   );
