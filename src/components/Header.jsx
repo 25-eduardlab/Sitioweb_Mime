@@ -7,19 +7,14 @@ const Header = () => {
     <header className="header-container">
       <div className="header-left">
         <img src={logo} alt="Logo" className="logo" />
-        <span className="header-title">CATEGORIAS</span>
-      </div>
-      <div className="header-center">
-        <input
-          type="text"
-          placeholder="¿Qué buscas hoy?"
-          className="search-input"
-        />
+        <span className="header-title">MIME</span>
       </div>
       <div className="header-right">
-        <span>Mis listas</span>
-        <span>Mi cuenta</span>
-        <span>Carrito</span>
+        <span>Inicio</span>
+        <span>Nosotros</span>
+        <span>Servicios</span>
+        <span>Reseñas</span>
+        <span>Contacto</span>
       </div>
     </header>
   );
