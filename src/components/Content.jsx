@@ -10,7 +10,7 @@ import Image6 from '../img/bosque.jpeg'; // Importa la imagen del logo
 
 const Content = () => {
   return (
-    <div className="content-container">
+    <div className="content-container">  
       {/* Sección de video */}
       <section className="video-section">
         <h2>Conoce Nuestro Video</h2>
@@ -25,7 +25,7 @@ const Content = () => {
       </section>
 
       {/* Sección de Servicios */}
-      <section className="services-section">
+      <section className="services-section"> 
         <h2>Nuestros Servicios</h2>
         <div className="services-grid">
           <div className="service-card">
