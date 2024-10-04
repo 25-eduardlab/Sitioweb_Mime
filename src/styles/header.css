@@ -7,71 +7,87 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color: #193357; /* Azul */
-    padding: 0px 20px;
+    background-color: #000; /* Azul */
+    padding: 0 20px;
     margin:0;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 7rem;
     position: fixed;
     z-index: 1000;
+    transition: all 0.2s ease;
   }
+  
+.header-container.scrolled {
+  background-color: #000000b2;
+  height: 5rem;
+  backdrop-filter: blur(18px);
+}
 
-  
-  .header-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 250px;
-    margin-right: 15px;
-  }
-  
-  .header-title {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 3vw;
-  }
-  
-  .header-right {
-    display: flex;
-    gap: 20px;
-    font-size: 16px;
-    color: #ffffff;
-    padding-right: 70px;
-  }
-  
-  .header-right span{
-    cursor: pointer;
-    margin: 0 7px;
-    font-size: 1.1rem;
-    color: #eee;
-    font-family: nazation ;
-    font-weight: 800;
-    position: relative;
-    text-transform: uppercase;
-    transition-duration: 400ms;
-    transition-property: color;
-  }
-  .header-right span:focus,
-  .header-right span:hover{
-    color: #fff;
-  }
-  .header-right span:focus:after,
-  .header-right span:hover:after {
-    width: 100%;
-    left: 0%;
-  }
+.header-container:hover{
+  background-color: #000;
+}
 
-  .header-right span:after {
-    content: "";
-    pointer-events: none;
-    bottom: -2px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: #fff;
-    transition-duration: 400ms;
-    transition-property: width, left;
-  }
-  
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  width: 15rem;
+  height: auto;
+  margin-right: 15px;
+}
+.logo.logoscrull {
+  width: 10rem;
+  height: 4rem;
+}
+
+.header-title {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  color: #ffffff;
+  padding-right: 70px;
+}
+
+.header-right span{
+  cursor: pointer;
+  margin: 0 7px;
+  font-size: 1.1rem;
+  color: #eee;
+  font-family: nazation ;
+  font-weight: 800;
+  position: relative;
+  text-transform: uppercase;
+  transition-duration: 400ms;
+  transition-property: color;
+}
+.header-right span:focus,
+.header-right span:hover{
+  color: #fff;
+}
+.header-right span:focus:after,
+.header-right span:hover:after {
+  width: 100%;
+  left: 0%;
+}
+.header-right span:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2.5px;
+  background-color: #fff;
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
