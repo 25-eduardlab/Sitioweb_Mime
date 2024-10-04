@@ -1,13 +1,13 @@
 /* header.css */
 @font-face {
-  font-family: nazation;
-  src: url("../fonts/nasalization-rg.otf");
+  font-family: 'Segoe UI';
+  
 }
 .header-container {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color: #193357; /* Azul */
+    background-color: #040c18; /* Azul */
     padding: 0px 20px;
     margin:0;
     width: 100%;
