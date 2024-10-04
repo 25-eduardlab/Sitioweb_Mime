@@ -8,7 +8,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 40) {
         setScrolled(true);  
       } else {
         setScrolled(false); 
@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className={`header-container ${scrolled ? "scrolled" : ""}`}>
       <div className="header-left">
-        <img src={logo} alt="Logo" className={`logo ${scrolled ? "logoscrull" : ""}`} />
+        <img src={logo} alt="Logo" className={`logomovi ${scrolled ? "logoscrull" : ""}`}/>
         <span className="header-title"></span>
       </div>
       <div className="header-right">

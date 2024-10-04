@@ -34,12 +34,12 @@
   align-items: center;
 }
 
-.logo{
+.logomovi{
   width: 15rem;
-  height: auto;
-  margin-right: 15px;
+  height: 6rem;
+  transition: all 0.3s ease;
 }
-.logo.logoscrull {
+.logomovi.logoscrull {
   width: 10rem;
   height: 4rem;
 }
@@ -53,7 +53,6 @@
 .header-right {
   display: flex;
   gap: 20px;
-  font-size: 16px;
   color: #ffffff;
   padding-right: 70px;
 }
@@ -63,10 +62,10 @@
   margin: 0 7px;
   font-size: 1.1rem;
   color: #eee;
-  font-family: nazation ;
+  font-family: Lucida Sans;
   font-weight: 800;
   position: relative;
-  text-transform: uppercase;
+  text-transform:capitalize;
   transition-duration: 400ms;
   transition-property: color;
 }
