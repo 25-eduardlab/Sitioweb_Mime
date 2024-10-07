@@ -73,7 +73,7 @@ const Content = () => {
           Tu navegador no soporta videos.
           </video>
 
-
+holaaaaaaaaaaaaaa mundooooooooooooooo
 
         </div>
         <p className='Voces'>Otras voces</p>
