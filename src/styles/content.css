@@ -2,6 +2,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 120px;
   }
   
   .video-section {
@@ -145,3 +146,30 @@
     background-color: #0056b3;
   }
   
+  .Voces{
+    font-size: 50px;
+    text-align: left;
+    margin-left: 100px;
+    font-family: 'Lucida Sans';
+    font-weight: 350;
+  }
+
+  .testimonio-div{
+    margin-left: 100px;
+    display: flex;
+  }
+  .Testimonio-style{
+    color: blue;
+    font-size: 50px;
+    text-align: left;
+    font-family: 'Lucida Sans';
+    font-weight: 350;
+  }  
+
+  .Testimonio2-style{
+    margin-left: 10px;
+    font-size: 50px;
+    text-align: left;
+    font-family: 'Lucida Sans';
+    font-weight: 350;
+  }

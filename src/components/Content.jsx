@@ -28,7 +28,7 @@ const Content = () => {
 
       {/* Sección de Servicios */}
       <section className="services-section">
-        <h2>Nuestros Servicios</h2>
+        <h2>Lo que ofrecemos</h2>
         <div className="services-grid">
           <div className="service-card">
             <img src={cristhian} alt="Servicios TI" />{/*Aqui cambie una imagen (cristhian)*/}
@@ -48,9 +48,26 @@ const Content = () => {
           </div>
         </div>
       </section>
+
+    <section className="Testimonio">
+      <div className='testimonio-div'><h2 className='Testimonio-style'>Testimonios </h2>
+      <h2 className='Testimonio2-style'>inspiradores </h2>
+      </div>
+       
+        <div className="Inspirador">
+          <video className="video-player" controls>
+          <source src="ruta-del-video.mp4" type="video/mp4" />
+          Tu navegador no soporta videos.
+          </video>
+
+
+
+        </div>
+        <p className='Voces'>Otras voces</p>
+    </section>
       
     <section className="image-gallery">
-        <h2>Galería de Imágenes</h2>
+        <h2 >Testimonios inspiradores</h2>
         <div className="custom-gallery-grid">
             <div className="main-image">
                 <img src={Image3} alt="Imagen 1" />
