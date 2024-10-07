@@ -67,11 +67,8 @@ const Content = () => {
         <div className="Inspirador">
           <video className="video-player" controls>
           <source src="ruta-del-video.mp4" type="video/mp4" />
-          Tu navegador no soporta videos.
+          Tu navegador no soporta videos pobre :V.
           </video>
-
-holaaaaaaaaaaaaaa mundooooooooooooooo
-
         </div>
         <p className='Voces'>Otras voces</p>
     </section>
