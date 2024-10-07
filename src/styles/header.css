@@ -1,14 +1,4 @@
 /* header.css */
-<<<<<<< HEAD
-@font-face {
-  font-family: nazation;
-  src: url("../fonts/nasalization-rg.otf");
-}
-
-/*Modificacion del contenedor de la cabezere*/
-=======
-
->>>>>>> 8cb1e33019a856bbaa1dd7b7f2e3f0e98d54677b
 .header-container {
     display: flex;
     justify-content:space-between;
