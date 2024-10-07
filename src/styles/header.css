@@ -1,8 +1,10 @@
 /* header.css */
 @font-face {
   font-family: nazation;
-  src: url("../fonts/nasalization-rg.otf");
+  src: url("../fonts/nasalization-rg.otf"); /*Nueva tipografia*/
 }
+
+/*Modificacion del contenedor de la cabezere*/
 .header-container {
     display: flex;
     justify-content:space-between;
@@ -18,13 +20,15 @@
     z-index: 1000;
     transition: all 0.2s ease;
   }
-  
+
+/*Se modifica el tomaño de la cabezera cuando baja 40px con el mause*/
 .header-container.scrolled {
-  background-color: #000000b2;
+  background-color: #0000008f;
   height: 5rem;
-  backdrop-filter: blur(18px);
+  backdrop-filter: blur(15px);
 }
 
+/*cambio de color cuando se pasa el cursor*/
 .header-container:hover{
   background-color: #000;
 }
@@ -38,7 +42,10 @@
   width: 15rem;
   height: 6rem;
   transition: all 0.3s ease;
+  will-change: filter;
 }
+
+/*Se diminuye el tamaño de la imagen junto a la cabezera*/
 .logomovi.logoscrull {
   width: 10rem;
   height: 4rem;
@@ -62,7 +69,7 @@
   margin: 0 7px;
   font-size: 1.1rem;
   color: #eee;
-  font-family: Lucida Sans;
+  font-family: "Lucida Sans";
   font-weight: 800;
   position: relative;
   text-transform:capitalize;
