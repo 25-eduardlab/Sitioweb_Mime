@@ -39,6 +39,7 @@ const Content = () => {
       {/* Sección de Servicios */}
       <section className="services-section"> 
         <h2>Nuestros Servicios</h2>
+        </section>
       <section className="services-section">
         <h2>Lo que ofrecemos</h2>
         <div className="services-grid">
