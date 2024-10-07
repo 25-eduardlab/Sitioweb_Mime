@@ -1,4 +1,8 @@
 #root {
+<<<<<<< HEAD
+  
+=======
+>>>>>>> origin/cristhian
   margin: 0;
   padding: 0;
   text-align: center;
@@ -37,6 +41,12 @@
 body {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
+}
+
+=======
   overflow-x: hidden;
 }
+>>>>>>> origin/cristhian
+
 
