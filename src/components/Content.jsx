@@ -15,7 +15,7 @@ const Content = () => {
     <div className="content-container">
       {/* Sección de video */}
       <section className="video-section">
-        <h2>Conoce Nuestro Video</h2>
+        <h2>Conoce Nuestro Video.</h2>
         <video className="video-player" controls>
           <source src="ruta-del-video.mp4" type="video/mp4" />
           Tu navegador no soporta videos.
