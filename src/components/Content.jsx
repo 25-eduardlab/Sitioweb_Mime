@@ -26,6 +26,25 @@ const Content = () => {
         </div>
       </section>
 
+      {/*Seccion Acerca de MIME*/}
+      <section className="informacion-mime">
+        <div className="texto-mimeinfo">
+          <div className="sub-info">
+              <p className="parrafo1">Acerca de</p>
+              <div className="sub-titulo">
+                <p className="parrafo2">MIME</p>
+                <p className="parrafo3">Consultores</p>
+              </div>
+              <p className="parrafo4">
+                En MIME buscamos empoderar a empresas mediante soluciones integrales de informática y electricidad, combinando innovación tecnológica y excelencia en el servicio para garantizar eficiencia, seguridad y sostenibilidad en cada proyecto.
+              </p>
+          </div>
+          <div className="imagen-mimeinfo">
+            {/*Seccion de imagen*/}
+          </div>
+        </div>
+      </section>
+
       {/* Sección de Servicios */}
       <section className="services-section">
         <h2>Lo que ofrecemos</h2>

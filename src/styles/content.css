@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding: 20px;
     margin-top: 120px;
+    height: auto;
   }
   
   .video-section {
@@ -15,6 +16,14 @@
     margin: 0 auto;
     margin-bottom: 50px;
   }
+  .titulopatro{
+    text-align: justify;
+    color: #000;
+    margin-left: 4%;
+    font-size: 40px;
+    font-family: "Calibri";
+    font-weight: 800;
+  }
 
   .image-row {
     display: flex;
@@ -23,40 +32,73 @@
     gap: 40px; /* Espacio entre las imágenes */
 }
 
-.custom-image-one {
-    margin-top: 50px; /* Distancia entre el video e imagen 1 */
-    margin-bottom: 50px; /* Distancia entre la imagen 1 y "Nuestros Servicios" */
+.patrocinadores {
+    margin: 4rem 0; /* Distancia entre el video e imagen 1 */
+    width: 10rem;
+    height: 5rem;
 }
 
-.custom-image-two {
-    margin-top: 100px; /* Distancia entre el video e imagen 2 */
-    margin-bottom: 100px; /* Distancia entre la imagen 2 y "Nuestros Servicios" */
-    margin-left: 20px; /* Ajusta la separación de la imagen 2 */
+/*Estilos para la seccion de informacion de MIME*/
+.texto-mimeinfo{
+  display: flex;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 4%;
+  margin-bottom: 150px;
+  width: 50%;
+}
+.sub-info{
+  font-family: Calibri;
+}
+.parrafo1{
+  font-size: 45px;
+  text-align: justify;
+  margin-bottom: 0;
+}
+.sub-titulo{
+  display: flex;
+  font-size: 70px;
+  text-align: justify;
+  font-weight: 800;
+}
+.parrafo2{
+  color: #007bff;
+  margin-top: 0;
+  margin-right: 20px;
+}
+.parrafo3{
+  margin-top: 0;
+}
+.parrafo4{
+  font-size: 35px;
+  text-align: left;
+  margin-top: 0;
+  margin-right: 100px ;
 }
 
   /* Estilos para la sección de servicios */
   .services-section {
     margin-top: 50px;
     text-align: center;
-  }
+}
   
-  .services-grid {
+.services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-top: 30px;
   }
   
-  .service-card {
+.service-card {
     padding:5px;
     border: 1px solid #ccc;
     border-radius: 10px;
     transition: transform 0.3s ease;
   }
   
-  .service-card:hover {
+.service-card:hover {
     transform: scale(1.05);
-  }
+}
   
   /* Estilos para la galería de imágenes */
   .custom-gallery-grid {
