@@ -5,87 +5,62 @@
         display: flex;
         flex-direction: column;
         font-family: calibri;
-        width: 100%;
     }
     .logo img{
         width: 12rem;
     }
-    .licencias h2{
-        font-size: 7vw;
+    .licencias h2, .contactos h3{
+        font-size: min(7vw,40px);
         margin: 1rem;
-    }
-    .licencias{
-        margin-top: 10px;
     }
     .enlaces{
         columns: 2;
     }
     .enlaces p{
         margin-bottom: 5px;
-        font-size: 4vw;
+        font-size: min(4vw,20px);
         text-decoration-line: underline;
         font-weight: 100;
     }
-    .contactos{
-        margin-top: 2rem;
-        padding: 2rem;
-    }
-    .contactos h3{
-        font-size: 7vw;
-    }
     .logo1{
         margin-top: 1.9rem;
-        font-size: 4vw;
-        width: 55vw;
-        height: 14vw;
+        font-size: min(4vw,20px);
+        width: min(45vw,220px);
+        height: min(10vw,50px);
         border-radius: 40px;
         display: flex;
         align-items: center;
-        padding-left: 2%;
     }
-      .logo1 .icon {
-        width: 10vw;
-        height: 10vw;
+    .logo2{
+        font-size: min(4vw,20px);
+        width: min(56vw,280px);
+        height: min(10vw,50px);
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .logo1 .icon, .logo2 .icon {
+        width: min(10vw,50px);
+        height: min(10vw,50px);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .icon img{
-        width: 5vw;
+        width: min(5vw,25px);
     }
-    .logo1 span{
-        margin-left: 9px;
-        font-weight: 100;
-    }
-    .logo2{
-        font-size: 4vw;
-        width: 70vw;
-        height: 14vw;
-        border-radius: 40px;
-        display: flex;
-        align-items: center;
-        padding-left: 2%;
-    }
-      .logo2 .icon {
-        width: 10vw;
-        height: 10vw;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .logo2 span{
+    .logo1 span, .logo2 span{
         margin-left: 9px;
         font-weight: 100;
     }
     .copy{
         text-align: center;
         margin-top: 4rem;
-        font-size: 3vw;
+        font-size: min(3vw,15px);
     }
 }
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
     .pageFooter{
         text-align: center;
         gap: 6vw;
@@ -96,8 +71,9 @@
     .logo img{
         width: 25vw;
     }
-    .licencias h2{
+    .licencias h2, .contactos h3{
         font-size: 3vw;
+        text-align: left;
     }
     .enlaces p{
         font-size: 2.5vw;
@@ -107,14 +83,12 @@
     .copy{
         width: 100%;
     }
-    .contactos h3{
-        font-size: 4vw;
-        text-align: left;
-        margin-left: 3%;
-    }
     .logotipos{
         display: flex;
         gap: 4vw;
+    }
+    .icon img{
+        width: 3vw;
     }
     .logo1{
         margin-top: 1.9rem;
@@ -125,18 +99,6 @@
         display: flex;
         align-items: center;
         padding-left: 2%;
-    }
-      .logo1 .icon {
-        width: 5vw;
-        height: 5vw;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .logo1 span{
-        margin-left: 9px;
-        font-weight: 100;
     }
     .logo2{
         margin-top: 1.9rem;
@@ -148,7 +110,7 @@
         align-items: center;
         padding-left: 2%;
     }
-      .logo2 .icon {
+    .logo1 .icon, .logo2 .icon {
         width: 5vw;
         height: 5vw;
         border-radius: 50%;
@@ -156,12 +118,13 @@
         align-items: center;
         justify-content: center;
     }
-    .logo2 span{
+    .logo1 span, .logo2 span{
         margin-left: 9px;
         font-weight: 100;
     }
+    
 }
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1023px){
     .pageFooter{
         display: flex;
         flex-wrap: wrap;
@@ -169,63 +132,48 @@
         font-family: calibri;
     }
     .logo img{
-        width: 17vw;
+        width: 15vw;
     }
-    .licencias h2{
-        font-size: 2.5vw;
+    .licencias h2, .contactos h3{
+        font-size: min(2vw,40px);
     }
     .enlaces p{
-        font-size: 1.5vw;
-        margin-bottom: 7px;
+        font-size: min(1.5vw,30px);
         text-decoration: underline 1px;
         text-align:left;
     }
     .copy{
         width: 100%;
-    }
-    .contactos h3{
-        font-size: 2.5vw;
+        font-size: min(1.24vw,30px);
     }
     .logo1{
-        margin-top: 1rem;
-        font-size: 1.5vw;
-        width: 17vw;
-        height: 4vw;
+        font-size: min(1.5vw,30px);
+        width: min(16vw,350px);
+        height: min(4vw,80px);
         border-radius: 40px;
         display: flex;
         align-items: center;
-    }
-    .logo1 .icon {
-        width: 4vw;
-        height: 4vw;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .logo1 span{
-        margin-left: 9px;
-        font-weight: 100;
     }
     .logo2{
-        margin-top: 1vw;
-        font-size: 1.5vw;
-        width: 22vw;
-        height: 4vw;
+        font-size: min(1.5vw,30px);
+        width: min(21vw,400px);
+        height: min(4vw,80px);
         border-radius: 40px;
         display: flex;
         align-items: center;
     }
-    .logo2 .icon {
-        width: 4vw;
-        height: 4vw;
+    .logo1 span, .logo2 span{
+        font-weight: 100;
+    }
+    .logo1 .icon, .logo2 .icon {
+        width: min(4vw,60px);
+        height: min(4vw,60px);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .logo2 span{
-        margin-left: 9px;
-        font-weight: 100;
+    .icon img{
+        width: min(1.8vw,30px);
     }
 }
