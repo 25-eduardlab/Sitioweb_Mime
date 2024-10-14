@@ -19,7 +19,7 @@ const Content = () => {
     <div className="content-container">
       {/* Sección de video */}
       <section className="video-section">
-        <h2>Conoce Nuestro Video</h2>
+        <h2>Conoce Nuestro Video.</h2>
         <video className="video-player" controls>
           <source src="ruta-del-video.mp4" type="video/mp4" />
           Tu navegador no soporta videos.
@@ -33,6 +33,25 @@ const Content = () => {
           <img src={lenovo} className ='patrocinadores'/>
           <img src={microsoft} className ='patrocinadores'/>
           <img src={ruckus} className ='patrocinadores'/>
+        </div>
+      </section>
+
+      {/*Seccion Acerca de MIME*/}
+      <section className="informacion-mime">
+        <div className="texto-mimeinfo">
+          <div className="sub-info">
+              <p className="parrafo1">Acerca de</p>
+              <div className="sub-titulo">
+                <p className="parrafo2">MIME</p>
+                <p className="parrafo3">Consultores</p>
+              </div>
+              <p className="parrafo4">
+                En MIME buscamos empoderar a empresas mediante soluciones integrales de informática y electricidad, combinando innovación tecnológica y excelencia en el servicio para garantizar eficiencia, seguridad y sostenibilidad en cada proyecto.
+              </p>
+          </div>
+          <div className="imagen-mimeinfo">
+            {/*Seccion de imagen*/}
+          </div>
         </div>
       </section>
 
@@ -58,23 +77,6 @@ const Content = () => {
           </div>
         </div>
       </section>
-
-    <section className="Testimonio">
-      <div className='testimonio-div'><h2 className='Testimonio-style'>Testimonios </h2>
-      <h2 className='Testimonio2-style'>inspiradores </h2>
-      </div>
-       
-        <div className="Inspirador">
-          <video className="video-player" controls>
-          <source src="ruta-del-video.mp4" type="video/mp4" />
-          Tu navegador no soporta videos.
-          </video>
-
-holaaaaaaaaaaaaaa mundooooooooooooooo
-
-        </div>
-        <p className='Voces'>Otras voces</p>
-    </section>
       
     <section className="image-gallery">
         <h2>Galería de Imágenes</h2>
