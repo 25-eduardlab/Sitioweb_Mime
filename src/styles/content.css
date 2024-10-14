@@ -4,6 +4,8 @@
     padding: 20px;
     margin-top: 120px;
     height: auto;
+    margin-top: 6rem;
+    height: auto;
   }
   
   .video-section {
@@ -18,19 +20,20 @@
   }
   .titulopatro{
     text-align: justify;
-    color: #000;
+    color: #12dbff;
     margin-left: 4%;
     font-size: 40px;
     font-family: "Calibri";
-    font-weight: 800;
+    font-weight: 400;
+
   }
 
   .image-row {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px; /* Espacio entre las imágenes */
-}
+    gap: 6rem; /* Espacio entre las imágenes */
+  }
 
 .patrocinadores {
     margin: 4rem 0; /* Distancia entre el video e imagen 1 */
@@ -215,3 +218,41 @@
     font-family: 'Lucida Sans';
     font-weight: 350;
   }
+  .Voces{
+    font-size: 50px;
+    text-align: left;
+    margin-left: 100px;
+    font-family: 'Lucida Sans';
+    font-weight: 350;
+  }
+
+  .testimonio-div{
+    margin-left: 100px;
+    display: flex;
+  }
+  .Testimonio-style{
+    color: blue;
+    font-size: 50px;
+    text-align: left;
+    font-family: 'Lucida Sans';
+    font-weight: 350;
+  }  
+
+  .Testimonio2-style{
+    margin-left: 10px;
+    font-size: 51px;
+    text-align: left;
+    font-family: 'Lucida Sans';
+    font-weight: 350;
+  }
+
+  .titulopatro, .image-row {
+    background-color: black;
+    
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%); 
+    padding-left: calc(50vw - 50%); 
+    padding-right: calc(50vw - 50%); 
+    position: relative; 
+  }
+  
