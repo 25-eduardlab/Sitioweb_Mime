@@ -1,4 +1,4 @@
-@media only screen and (max-width: 769px){
+@media only screen and (max-width: 600px){
     .pageFooter{
         text-align: left;
         columns: 4;
@@ -10,7 +10,7 @@
         width: 12rem;
     }
     .licencias h2, .contactos h3{
-        font-size: min(7vw,40px);
+        font-size: 1.4rem;
         margin: 1rem;
     }
     .enlaces{
@@ -18,41 +18,39 @@
     }
     .enlaces p{
         margin-bottom: 5px;
-        font-size: min(4vw,20px);
+        font-size: 1rem;
         text-decoration-line: underline;
         font-weight: 100;
     }
     .logo1{
-        margin-top: 1.9rem;
-        font-size: min(4vw,20px);
-        width: min(45vw,220px);
-        height: min(10vw,50px);
+        font-size: 1rem;
+        width: 200px;
+        height: 50px;
         border-radius: 40px;
         display: flex;
         align-items: center;
     }
     .logo2{
-        font-size: min(4vw,20px);
-        width: min(56vw,280px);
-        height: min(10vw,50px);
+        font-size: 1rem;
+        width: 260px;
+        height: 50px;
         border-radius: 40px;
         display: flex;
         align-items: center;
     }
+    .logo1 span, .logo2 span{
+        font-weight: 100;
+    }
     .logo1 .icon, .logo2 .icon {
-        width: min(10vw,50px);
-        height: min(10vw,50px);
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .icon img{
-        width: min(5vw,25px);
-    }
-    .logo1 span, .logo2 span{
-        margin-left: 9px;
-        font-weight: 100;
+        width: 23px;
     }
     .copy{
         text-align: center;
@@ -60,104 +58,45 @@
         font-size: min(3vw,15px);
     }
 }
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
+@media only screen and (min-width: 600px){
     .pageFooter{
-        text-align: center;
-        gap: 6vw;
         display: flex;
         flex-wrap: wrap;
+        gap: 3rem;
         font-family: calibri;
-    }
-    .logo img{
-        width: 25vw;
-    }
-    .licencias h2, .contactos h3{
-        font-size: 3vw;
         text-align: left;
     }
-    .enlaces p{
-        font-size: 2.5vw;
-        text-decoration: underline 1px;
-        text-align:left;
-    }
-    .copy{
-        width: 100%;
-    }
-    .logotipos{
-        display: flex;
-        gap: 4vw;
-    }
-    .icon img{
-        width: 3vw;
-    }
-    .logo1{
-        margin-top: 1.9rem;
-        font-size: 2.3vw;
-        width: 25vw;
-        height: 7vw;
-        border-radius: 40px;
-        display: flex;
-        align-items: center;
-        padding-left: 2%;
-    }
-    .logo2{
-        margin-top: 1.9rem;
-        font-size: 2.3vw;
-        width: 34.2vw;
-        height: 7vw;
-        border-radius: 40px;
-        display: flex;
-        align-items: center;
-        padding-left: 2%;
-    }
-    .logo1 .icon, .logo2 .icon {
-        width: 5vw;
-        height: 5vw;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .logo1 span, .logo2 span{
-        margin-left: 9px;
-        font-weight: 100;
-    }
-    
-}
-@media only screen and (min-width: 1023px){
-    .pageFooter{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6vw;
-        font-family: calibri;
-    }
     .logo img{
-        width: 15vw;
+        width: 12rem;
+    }
+    .licencias{
+        margin-right: 3vw;
     }
     .licencias h2, .contactos h3{
-        font-size: min(2vw,40px);
+        font-size: 1.4rem;
     }
     .enlaces p{
-        font-size: min(1.5vw,30px);
+        font-size: 1rem;
         text-decoration: underline 1px;
         text-align:left;
     }
     .copy{
+        text-align: center;
         width: 100%;
-        font-size: min(1.24vw,30px);
+        font-size: 13px;
     }
     .logo1{
-        font-size: min(1.5vw,30px);
-        width: min(16vw,350px);
-        height: min(4vw,80px);
+        font-size: 1rem;
+        width: 200px;
+        height: 50px;
         border-radius: 40px;
         display: flex;
         align-items: center;
     }
     .logo2{
-        font-size: min(1.5vw,30px);
-        width: min(21vw,400px);
-        height: min(4vw,80px);
+        font-size: 1rem;
+        width: 260px;
+        height: 50px;
         border-radius: 40px;
         display: flex;
         align-items: center;
@@ -166,14 +105,14 @@
         font-weight: 100;
     }
     .logo1 .icon, .logo2 .icon {
-        width: min(4vw,60px);
-        height: min(4vw,60px);
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .icon img{
-        width: min(1.8vw,30px);
+        width: 23px;
     }
 }
