@@ -9,7 +9,11 @@ const App = () => {
     <>
       <Header />
       <Content />
+<<<<<<< HEAD
       <PageFooter />
+=======
+      
+>>>>>>> 7c04b274f25e0bc33f21ac1da16a0e4c7ccfc70b
       {/* Aquí puedes agregar más componentes */}
     </>
   );
