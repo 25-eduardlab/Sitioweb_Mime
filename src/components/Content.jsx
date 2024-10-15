@@ -16,7 +16,7 @@ import ruckus from '../svg/ruckus.svg';
 
 const Content = () => {
   return (
-    <div className="content-container">
+    <div className="content-container">  
       {/* Sección de video */}
       <section className="video-section">
         <h2>Conoce Nuestro Video.</h2>
@@ -96,7 +96,7 @@ const Content = () => {
 
 
       {/* Sección de Servicios */}
-      <section className="services-section">
+      <section className="services-section"> 
         <h2>Nuestros Servicios</h2>
         <div className="services-grid">
           <div className="service-card">
