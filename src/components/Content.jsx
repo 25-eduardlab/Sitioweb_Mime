@@ -55,6 +55,46 @@ const Content = () => {
         </div>
       </section>
 
+      <section className='section-tb1'>  
+    <h2>Lo que ofrecemos</h2>  
+    <div className='tb1'>   
+        <table className='img-tb1'>  
+            <tbody>  
+                <tr>  
+                    <td>  
+                        <div className='image-container'>  
+                            <img src="src/img/bosque.jpeg" alt="Imagen 1" className='imagen01'/>  
+                            <div className='image-caption'>Servicios TI</div>  
+                        </div>  
+                    </td>  
+                    <td>  
+                        <div className='image-container'>  
+                            <img src="src/img/bosque.jpeg" alt="Imagen 2" className='imagen02'/>  
+                            <div className='image-caption'>Infraestructura </div>  
+                        </div>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>  
+                        <div className='image-container'>  
+                            <img src="src/img/bosque.jpeg" alt="Imagen 3" className='imagen03' />  
+                            <div className='image-caption'>Aplicaciones TI</div>  
+                        </div>  
+                    </td>  
+                    <td>  
+                        <div className='image-container'>  
+                            <img src="src/img/bosque.jpeg" alt="Imagen 4" className='imagen04'/>  
+                            <div className='image-caption'>Distribución de Equipos</div>  
+                        </div>  
+                    </td>  
+                </tr>  
+            </tbody>  
+        </table>   
+    </div>  
+</section>      
+
+
+
       {/* Sección de Servicios */}
       <section className="services-section">
         <h2>Nuestros Servicios</h2>
