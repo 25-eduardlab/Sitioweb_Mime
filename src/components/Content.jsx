@@ -1,12 +1,16 @@
 import React from 'react';
 import '../styles/content.css';  // Importamos el archivo de estilos
-import Image1 from '../img/como.jpeg'; // Importa la imagen del logo
-import Image2 from '../img/hola.png'; // Importa la imagen del logo
 import Image3 from '../img/leon.jpeg'; // Importa la imagen del logo
 import Image4 from '../img/arbol.jpeg'; // Importa la imagen del logo
 import Image5 from '../img/savana.jpeg'; // Importa la imagen del logo
 import Image6 from '../img/bosque.jpeg'; // Importa la imagen del logo
 import cristhian from '../img/paisaje.jpeg' //Mi imagen :v cristhian
+import cisco from '../svg/cisco.svg';
+import intel from '../svg/intel.svg';
+import lenovo from '../svg/lenovo.svg';
+import microsoft from '../svg/microsoft.svg';
+import ruckus from '../svg/ruckus.svg';
+
 
 
 
@@ -15,14 +19,40 @@ const Content = () => {
     <div className="content-container">  
       {/* Sección de video */}
       <section className="video-section">
-        <h2>Conoce Nuestro Video</h2>
-        <video className="video-player" controls>
-          <source src="ruta-del-video.mp4" type="video/mp4" />
-          Tu navegador no soporta videos.
-        </video>
-        <div className="image-row flex justify-center space-x-4 mt-8">
-          <img src={Image1} alt="Imagen 1" className="custom-image-one w-1/2 h-auto border border-gray-300"/>
-          <img src={Image2} alt="Imagen 2" className="custom-image-two w-1/3 h-auto border border-gray-300" />
+        <div className="bienvenida">
+          <h1>Impulsa tu Vision</h1>
+          <h2>Conectate al futuro con exito</h2>
+          <h3>Empieza tu futuro hoy</h3>
+          <div className="fondo"></div>
+        </div>
+        <div className="titulopatro">
+          <p>Colaboraciones Que Impulsan El Cambio</p>
+        </div>
+        <div className="image-row">
+          <img src={cisco} className ='patrocinadores'/>
+          <img src={intel} className ='patrocinadores '/>
+          <img src={lenovo} className ='patrocinadores'/>
+          <img src={microsoft} className ='patrocinadores'/>
+          <img src={ruckus} className ='patrocinadores'/>
+        </div>
+      </section>
+
+      {/*Seccion Acerca de MIME*/}
+      <section className="informacion-mime">
+        <div className="texto-mimeinfo">
+          <div className="sub-info">
+              <p className="parrafo1">Acerca de</p>
+              <div className="sub-titulo">
+                <p className="parrafo2">MIME</p>
+                <p className="parrafo3">Consultores</p>
+              </div>
+              <p className="parrafo4">
+                En MIME buscamos empoderar a empresas mediante soluciones integrales de informática y electricidad, combinando innovación tecnológica y excelencia en el servicio para garantizar eficiencia, seguridad y sostenibilidad en cada proyecto.
+              </p>
+          </div>
+          <div className="imagen-mimeinfo">
+            {/*Seccion de imagen*/}
+          </div>
         </div>
       </section>
 
@@ -48,6 +78,20 @@ const Content = () => {
           </div>
         </div>
       </section>
+
+    <section className="Testimonio">
+      <div className='testimonio-div'><h2 className='Testimonio-style'>Testimonios </h2>
+      <h2 className='Testimonio2-style'>inspiradores </h2>
+      </div>
+       
+        <div className="Inspirador">
+          <video className="video-player" controls>
+          <source src="ruta-del-video.mp4" type="video/mp4" />
+          Tu navegador no soporta videos pobre :V.
+          </video>
+        </div>
+        <p className='Voces'>Otras voces</p>
+    </section>
       
     <section className="image-gallery">
         <h2>Galería de Imágenes</h2>

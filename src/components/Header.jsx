@@ -1,32 +1,42 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/header.css'; // Importa los estilos de la cabecera
 import logo from '../img/mime_logo.png'; // Importa la imagen del logo
+import menu from '../svg/menu.svg';
+import close from '../svg/close.svg';
+
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  /*Agrege una accion para el sroller cuando bajan mas*/
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () =>{
+    setIsOpen(!isOpen);
+  }
 
-  // Efecto para cambiar la clase de la cabecera cuando se hace scroll
+  const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      if (window.scrollY > 40) {
+        setScrolled(true);  
+      } else {
+        setScrolled(false); 
+      }
     };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll); 
+    };
   }, []);
 
-  // Función para alternar el menú hamburguesa en móviles
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
+//Cambie el nombre de la clase por que era igual al alt, lo cambio logomovi por movimiento :V
   return (
-    <header className={`header-container ${scrolled ? 'scrolled' : ''}`}>
+    <header className={`header-container bg-black ${scrolled ? "scrolled" : ""}`}>
       <div className="header-left">
-        <img src={logo} alt="Logo" className="logo" />
+        <img src={logo} alt="Logo" className={`logomovi ${scrolled ? "logoscrull" : ""}`}/>
       </div>
-      <div className="header-right">
+      <div className="boton-menu" onClick={toggleMenu}>
+        <img src={isOpen ? close : menu} alt="" />
+      </div>
+      <div className={`header-right ${isOpen ? "menu active" : "menu"}`}>
         <span>Inicio</span>
         <span>Nosotros</span>
         <span>Servicios</span>
@@ -54,5 +64,6 @@ const Header = () => {
     </header>
   );
 };
+
 
 export default Header;
