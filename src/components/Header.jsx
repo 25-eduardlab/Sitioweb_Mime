@@ -34,7 +34,7 @@ const Header = () => {
         <img src={logo} alt="Logo" className={`logomovi ${scrolled ? "logoscrull" : ""}`}/>
       </div>
       <div className="boton-menu" onClick={toggleMenu}>
-        <img src={menu} alt="" />
+        <img src={isOpen ? close : menu} alt="" />
       </div>
       <div className={`header-right ${isOpen ? "menu active" : "menu"}`}>
         <span>Inicio</span>

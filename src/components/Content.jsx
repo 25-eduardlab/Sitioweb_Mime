@@ -19,11 +19,12 @@ const Content = () => {
     <div className="content-container">  
       {/* Sección de video */}
       <section className="video-section">
-        <h2>Conoce Nuestro Video.</h2>
-        <video className="video-player" controls>
-          <source src="ruta-del-video.mp4" type="video/mp4" />
-          Tu navegador no soporta videos.
-        </video>
+        <div className="bienvenida">
+          <h1>Impulsa tu Vision</h1>
+          <h2>Conectate al futuro con exito</h2>
+          <h3>Empieza tu futuro hoy</h3>
+          <div className="fondo"></div>
+        </div>
         <div className="titulopatro">
           <p>Colaboraciones Que Impulsan El Cambio</p>
         </div>

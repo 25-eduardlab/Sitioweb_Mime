@@ -15,7 +15,7 @@
     height: 6.5rem;
     position: fixed;
     z-index: 1;
-    transition: all 0.2s ease;
+    transition: 0.3s;
   }
   .logomovi{
     width: 10rem;
@@ -26,7 +26,7 @@
     top: 100%;
     left: -100%;
     width: 100%;
-    padding: 1rem 4%;
+    padding: 0 4%;
     background-color: #000;
     color: #fff;
     font-weight: 500;
@@ -36,26 +36,27 @@
     margin-right: 4%;
   }
   .boton-menu img{
-    display: block;
     width: 40px;
     cursor: pointer;
   }
   .header-right span{
     display: block;
     font-size: 1rem;
-    margin: 5px 0;
+    margin: 15px 0;
+    cursor: pointer;
   }
   .menu{
-    display: none;
-    position: absolute;
+    max-height: 0;
+    overflow: hidden;
     top: 100%;
     left: 0;
     width: 100%;
     flex-direction: column;
     text-align: left;
+    transition: 0.5s;
   }
   .menu.active{
-    display: flex;
+    max-height: 500px;
   }
 }
 @media only screen and (min-width: 765px) {
@@ -77,17 +78,6 @@
 .boton-menu{
   display: none;
 }
-/*Se modifica el tomaño de la cabezera cuando baja 40px con el mause*/
-.header-container.scrolled {
-  background-color: #0000008f;
-  height: 5rem;
-  backdrop-filter: blur(15px);
-}
-
-/*cambio de color cuando se pasa el cursor*/
-.header-container:hover{
-  background-color: #000;
-}
 
 .logomovi{
   width: 10rem;
@@ -95,11 +85,6 @@
   transition: all 0.3s ease;
 }
 
-/*Se diminuye el tamaño de la imagen junto a la cabezera*/
-.logomovi.logoscrull {
-  width: 8.5rem;
-  height: 3.5rem;
-}
 .header-right {
   display: flex;
   gap: 20px;
