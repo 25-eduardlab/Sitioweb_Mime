@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/content.css';  // Importamos el archivo de estilos
-import Image3 from '../img/leon.jpeg'; // Importa la imagen del logo
+import Image3 from '../img/tecnologia.png'; // Importa la imagen del logo
 import Image4 from '../img/arbol.jpeg'; // Importa la imagen del logo
 import Image5 from '../img/savana.jpeg'; // Importa la imagen del logo
 import Image6 from '../img/bosque.jpeg'; // Importa la imagen del logo
@@ -61,7 +61,7 @@ const Content = () => {
         <h2>Nuestros Servicios</h2>
         <div className="services-grid">
           <div className="service-card">
-            <img src={cristhian} alt="Servicios TI" />{/*Aqui cambie una imagen (cristhian)*/}
+            <img src={Image3} alt="Servicios TI" />{/*Aqui cambie una imagen (cristhian)*/}
             <h3>Servicios TI</h3>
           </div>
           <div className="service-card">
