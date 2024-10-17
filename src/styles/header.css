@@ -80,6 +80,7 @@
   span img{
     margin-right: 10px;
   };
+}
 @media only screen and (min-width: 765px) {
   /*Modificacion del contenedor de la cabezere*/
 .header-container {
@@ -96,7 +97,7 @@
     z-index: 1;
     transition: all 0.2s ease;
   }
-.boton-menu{
+.boton-menu, .boton-close, span img{
   display: none;
 }
 
