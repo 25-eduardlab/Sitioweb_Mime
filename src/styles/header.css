@@ -14,23 +14,40 @@
     width: 100%;
     height: 6.5rem;
     position: fixed;
-    z-index: 1;
     transition: 0.3s;
+    z-index: 2;
   }
   .logomovi{
     width: 10rem;
     height: 4rem;
   }
-  .header-right{
-    position: absolute;
-    top: 100%;
-    left: -100%;
+  .fondo{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 0 4%;
-    background-color: #000;
-    color: #fff;
-    font-weight: 500;
-    font-family: "Lucida Sans";
+    height: 100%;
+    z-index: 1;
+    backdrop-filter: blur(12px);
+  }
+  .header-right{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: 0.2s;
+    background-image: linear-gradient(139deg,rgb(27, 43, 85) 0%,rgb(26, 41, 80) 40%,rgb(38, 61, 75) 100%);
+    border-radius: 10px 0 0 10px;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 3;
+  }
+  .menu.active{
+    width: 250px;
   }
   .boton-menu{
     margin-right: 4%;
@@ -39,25 +56,30 @@
     width: 40px;
     cursor: pointer;
   }
-  .header-right span{
-    display: block;
-    font-size: 1rem;
-    margin: 15px 0;
+  .boton-close{
+    margin: 5%;
+    margin-bottom: 25px;
+    width: 3rem;
+  }
+  .boton-close img{
+    padding: 3%;
+    width: 3rem;
     cursor: pointer;
   }
-  .menu{
-    max-height: 0;
-    overflow: hidden;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    flex-direction: column;
+  .header-right span{
+    display: flex;
+    width:min-content;
+    font-size: 1rem;
+    padding: 0px 30px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    color: #fff;
     text-align: left;
-    transition: 0.5s;
+    font-weight: 100;
   }
-  .menu.active{
-    max-height: 500px;
-  }
+  span img{
+    margin-right: 10px;
+  };
 }
 @media only screen and (min-width: 765px) {
   /*Modificacion del contenedor de la cabezere*/
@@ -75,7 +97,7 @@
     z-index: 1;
     transition: all 0.2s ease;
   }
-.boton-menu{
+.boton-menu, .boton-close, span img{
   display: none;
 }
 
