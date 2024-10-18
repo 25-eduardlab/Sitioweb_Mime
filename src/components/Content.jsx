@@ -10,15 +10,15 @@ import intel from '../svg/intel.svg';
 import lenovo from '../svg/lenovo.svg';
 import microsoft from '../svg/microsoft.svg';
 import ruckus from '../svg/ruckus.svg';
+import Image7 from '../img/Dedos.png';
 
 
 
-
-const Content = () => {
+const Content = ( {sectionRefs}) => {
   return (
     <div className="content-container">  
       {/* Sección de video */}
-      <section className="video-section">
+      <section ref={sectionRefs.seccion1}className="video-section">
         <h2>Conoce Nuestro Video.</h2>
         <video className="video-player" controls>
           <source src="ruta-del-video.mp4" type="video/mp4" />
@@ -37,7 +37,7 @@ const Content = () => {
       </section>
 
       {/*Seccion Acerca de MIME*/}
-      <section className="informacion-mime">
+      <section ref={sectionRefs.seccion2}className="informacion-mime">
         <div className="texto-mimeinfo">
           <div className="sub-info">
             <p className="parrafo1">Acerca de</p>
@@ -51,12 +51,13 @@ const Content = () => {
           </div>
           <div className="imagen-mimeinfo">
             {/*Seccion de imagen*/}
+            <img src={Image7} alt="Dedos"/>
           </div>
         </div>
       </section>
 
       {/* Sección de Servicios */}
-      <section className="services-section"> 
+      <section ref={sectionRefs.seccion3}className="services-section"> 
         <h2>Nuestros Servicios</h2>
         <div className="services-grid">
           <div className="service-card">
@@ -78,7 +79,7 @@ const Content = () => {
         </div>
       </section>
 
-      <section className="Testimonio">
+      <section ref={sectionRefs.seccion4}className="Testimonio">
         <div className='testimonio-div'><h2 className='Testimonio-style'>Testimonios </h2>
           <h2 className='Testimonio2-style'>inspiradores </h2>
         </div>
@@ -124,7 +125,7 @@ const Content = () => {
 
         {/* Formulario */}
 
-        <section className="contact-form">
+        <section ref={sectionRefs.seccion5}className="contact-form">
           <h2>Contáctanos</h2>
           <form>
             <div className="form-row">

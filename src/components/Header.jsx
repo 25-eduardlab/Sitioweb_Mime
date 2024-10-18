@@ -1,13 +1,14 @@
-import React from 'react';
+
 import '../styles/header.css'; // Importa los estilos de la cabecera
 import logo from '../img/mime_logo.png'; // Importa la imagen del logo
 import menu from '../svg/menu.svg';
 import close from '../svg/close.svg';
-import { useState,useEffect } from 'react';
+import React, { useState,useEffect } from 'react';
 
-const Header = () => {
+const Header = ({ scrollToSection}) => {
   /*Agrege una accion para el sroller cuando bajan mas*/
   const [isOpen, setIsOpen] = useState(false);
+ 
   const toggleMenu = () =>{
     setIsOpen(!isOpen);
   }
@@ -37,11 +38,11 @@ const Header = () => {
         <img src={menu} alt="" />
       </div>
       <div className={`header-right ${isOpen ? "menu active" : "menu"}`}>
-        <span>Inicio</span>
-        <span>Nosotros</span>
-        <span>Servicios</span>
-        <span>Reseñas</span>
-        <span>Contacto</span>
+        <span onClick = {() => scrollToSection('seccion1')}>Inicio</span>
+        <span onClick = {() => scrollToSection('seccion2')}>Nosotros</span>
+        <span onClick = {() => scrollToSection('seccion3')}>Servicios</span>
+        <span onClick = {() => scrollToSection('seccion4')}>Reseñas</span>
+        <span onClick = {() => scrollToSection('seccion5')}>Contacto</span>
       </div>
     </header>
   );

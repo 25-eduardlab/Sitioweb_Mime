@@ -48,10 +48,13 @@
   margin-top: 10px;
   margin-left: 4%;
   margin-bottom: 150px;
-  width: 50%;
+  width: 100%;
+  margin-right: 4%;
 }
 .sub-info{
   font-family: Calibri;
+  width: 50%;
+
 }
 .parrafo1{
   font-size: 45px;
@@ -76,7 +79,7 @@
   font-size: 35px;
   text-align: left;
   margin-top: 0;
-  margin-right: 100px ;
+  
 }
 
   /* Estilos para la sección de servicios */
@@ -256,3 +259,16 @@
     position: relative; 
   }
   
+  .imagen-mimeinfo  {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+  }
+
+  .imagen-mimeinfo img {
+    
+    width: 100%;
+    height: auto;
+    max-width: 4000px;
+    
+  }
