@@ -27,7 +27,7 @@ const App = () => {
     <>
       <Header />
       <Content />
-      <PageFooter />
+      
       {/* Aquí puedes agregar más componentes */}
     </>
   );
