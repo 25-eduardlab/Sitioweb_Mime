@@ -10,11 +10,11 @@ import intel from '../svg/intel.svg';
 import lenovo from '../svg/lenovo.svg';
 import microsoft from '../svg/microsoft.svg';
 import ruckus from '../svg/ruckus.svg';
+import Image7 from '../img/Dedos.png';
 
 
 
-
-const Content = () => {
+const Content = ( ) => {
   return (
     <div className="content-container">  
       {/* Sección de video */}
@@ -26,14 +26,14 @@ const Content = () => {
           <div className="fondo"></div>
         </div>
         <div className="titulopatro">
-          <p>Colaboraciones Que Impulsan El Cambio</p>
+          <p>Colaboraciones que impulsan el cambio</p>
         </div>
         <div className="image-row">
-          <img src={cisco} className ='patrocinadores'/>
-          <img src={intel} className ='patrocinadores '/>
-          <img src={lenovo} className ='patrocinadores'/>
-          <img src={microsoft} className ='patrocinadores'/>
-          <img src={ruckus} className ='patrocinadores'/>
+          <img src={cisco} className='patrocinadores' />
+          <img src={intel} className='patrocinadores ' />
+          <img src={lenovo} className='patrocinadores' />
+          <img src={microsoft} className='patrocinadores' />
+          <img src={ruckus} className='patrocinadores' />
         </div>
       </section>
 
@@ -41,17 +41,18 @@ const Content = () => {
       <section className="informacion-mime">
         <div className="texto-mimeinfo">
           <div className="sub-info">
-              <p className="parrafo1">Acerca de</p>
-              <div className="sub-titulo">
-                <p className="parrafo2">MIME</p>
-                <p className="parrafo3">Consultores</p>
-              </div>
-              <p className="parrafo4">
-                En MIME buscamos empoderar a empresas mediante soluciones integrales de informática y electricidad, combinando innovación tecnológica y excelencia en el servicio para garantizar eficiencia, seguridad y sostenibilidad en cada proyecto.
-              </p>
+            <p className="parrafo1">Acerca de</p>
+            <div className="sub-titulo">
+              <p className="parrafo2">MIME</p>
+              <p className="parrafo3">Consultores</p>
+            </div>
+            <p className="parrafo4">
+              En MIME buscamos empoderar a empresas mediante soluciones integrales de informática y electricidad, combinando innovación tecnológica y excelencia en el servicio para garantizar eficiencia, seguridad y sostenibilidad en cada proyecto.
+            </p>
           </div>
           <div className="imagen-mimeinfo">
             {/*Seccion de imagen*/}
+            <img src={Image7} alt="Dedos"/>
           </div>
         </div>
       </section>
@@ -59,6 +60,9 @@ const Content = () => {
       {/* Sección de Servicios */}
       <section className="services-section"> 
         <h2>Nuestros Servicios</h2>
+        </section>
+      <section className="services-section">
+        <h2>Lo que ofrecemos</h2>
         <div className="services-grid">
           <div className="service-card">
             <img src={cristhian} alt="Servicios TI" />{/*Aqui cambie una imagen (cristhian)*/}
@@ -79,11 +83,11 @@ const Content = () => {
         </div>
       </section>
 
-    <section className="Testimonio">
-      <div className='testimonio-div'><h2 className='Testimonio-style'>Testimonios </h2>
-      <h2 className='Testimonio2-style'>inspiradores </h2>
-      </div>
-       
+      <section className="Testimonio">
+        <div className='testimonio-div'><h2 className='Testimonio-style'>Testimonios </h2>
+          <h2 className='Testimonio2-style'>inspiradores </h2>
+        </div>
+
         <div className="Inspirador">
           <video className="video-player" controls>
           <source src="ruta-del-video.mp4" type="video/mp4" />
@@ -91,42 +95,53 @@ const Content = () => {
           </video>
         </div>
         <p className='Voces'>Otras voces</p>
-    </section>
-      
-    <section className="image-gallery">
-        <h2>Galería de Imágenes</h2>
-        <div className="custom-gallery-grid">
-            <div className="main-image">
-                <img src={Image3} alt="Imagen 1" />
-                <div className="overlay-text">Haz clic para aprovechar al máximo esta idea con una cuenta gratuita</div>
-                <button className="cta-button">Más información</button>
-            </div>
-            
-            <div className="side-images">
-                <img src={Image5} alt="Imagen 2" />
-                <img src={Image6} alt="Imagen 3" />
-            </div>
-        </div>
-    </section>
-
-
-      {/* Formulario */}
-      <section className="contact-form">
-        <h2>Contáctanos</h2>
-        <form>
-          <div className="form-row">
-            <input type="text" placeholder="Nombre" />
-            <input type="text" placeholder="Apellido" />
-          </div>
-          <div className="form-row">
-            <input type="email" placeholder="Correo" />
-            <input type="tel" placeholder="Teléfono" />
-          </div>
-          <textarea placeholder="Mensaje"></textarea>
-          <button type="submit">Enviar</button>
-        </form>
       </section>
-    </div>
+    <section className="Testimonio">
+        <div className='testimonio-div'><h2 className='Testimonio-style'>Testimonios </h2>
+          <h2 className='Testimonio2-style'>inspiradores </h2>
+        </div>
+
+        <div className="Inspirador">
+          <video className="video-player" controls>
+            <source src="ruta-del-video.mp4" type="video/mp4" />
+            Tu navegador no soporta videos pobre :V.
+          </video>
+        </div>
+        <p className='Voces'>Otras voces</p>
+      </section><section className="image-gallery">
+        <h2>Testimonios inspiradores</h2>
+        <div className="custom-gallery-grid">
+          <div className="main-image">
+            <img src={Image3} alt="Imagen 1" />
+            <div className="overlay-text">Haz clic para aprovechar al máximo esta idea con una cuenta gratuita</div>
+            <button className="cta-button">Más información</button>
+          </div>
+
+          <div className="side-images">
+            <img src={Image5} alt="Imagen 2" />
+            <img src={Image6} alt="Imagen 3" />
+          </div>
+        </div>
+      </section>
+
+        {/* Formulario */}
+
+        <section className="contact-form">
+          <h2>Contáctanos</h2>
+          <form>
+            <div className="form-row">
+              <input type="text" placeholder="Nombre" />
+              <input type="text" placeholder="Apellido" />
+            </div>
+            <div className="form-row">
+              <input type="email" placeholder="Correo" />
+              <input type="tel" placeholder="Teléfono" />
+            </div>
+            <textarea placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </div>
   );
 };
 

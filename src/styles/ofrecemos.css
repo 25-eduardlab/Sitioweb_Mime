@@ -1,0 +1,107 @@
+/* Estilos generales para el contenedor principal */
+.content-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #007bff; /* Color principal */
+  margin-bottom: 2rem;
+}
+
+/* Estilos para la sección "Nuestros Servicios" */
+.services-ofrecer {
+  margin-bottom: 2rem;
+}
+
+.services-ofrecer h2 {
+  font-size: 2.5rem;
+  color: #333;
+  text-transform: uppercase; /* Texto en mayúsculas */
+  margin-bottom: 1rem;
+}
+
+/* Estilos para la sección "Lo que ofrecemos" */
+.services-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Grid para las tarjetas de servicios */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+  justify-content: center; /* Alinear tarjetas al centro */
+}
+
+/* Estilos para las tarjetas de servicios */
+.service-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Efecto hover para las tarjetas */
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+  }
+
+  h1 {
+    font-size: 2rem; /* Tamaño de fuente reducido en pantallas pequeñas */
+  }
+
+  .services-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+
+  .service-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .service-card img {
+    width: 80px;
+  }
+}

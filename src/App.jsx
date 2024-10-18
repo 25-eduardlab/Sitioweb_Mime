@@ -1,33 +1,23 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import Header from './components/Header';
 import Content from './components/Content';
 import PageFooter from './components/PageFooter'
+import Conectate from './components/conectate';
+import Colaboraciones from './components/colaboraciones';
+import Acercamime from './components/acercamime';
+import Ofrecemos from './components/Ofrecemos';
 import './App.css';
 
 const App = () => {
-  const seccion1Ref = useRef(null);
-  const seccion2Ref = useRef(null);
-  const seccion3Ref = useRef(null);
-  const seccion4Ref = useRef(null);
-  const seccion5Ref = useRef(null);
 
-  const sectionRefs = {
-    seccion1: seccion1Ref,
-    seccion2: seccion2Ref,
-    seccion3: seccion3Ref,
-    seccion4: seccion4Ref,
-    seccion5: seccion5Ref,
 
-  };
-
-  const scrollToSection = (section) => {
-    sectionRefs[section].current.scrollIntoView({behavior: 'smooth'});
-  };
+ 
   return (
     <>
       <Header />
-      <Content />
-      
+      <Conectate />
+    
+      <PageFooter />
       {/* Aquí puedes agregar más componentes */}
     </>
   );
