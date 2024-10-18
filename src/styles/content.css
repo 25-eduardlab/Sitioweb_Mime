@@ -52,7 +52,8 @@
     padding-left: 4%;
     font-size: 40px;
     font-family: "Calibri";
-    font-weight: 800;
+    font-weight: 400;
+
   }
 
   .image-row {
@@ -75,10 +76,13 @@
   margin-top: 10px;
   margin-left: 4%;
   margin-bottom: 150px;
-  width: 50%;
+  width: 100%;
+  margin-right: 4%;
 }
 .sub-info{
   font-family: Calibri;
+  width: 50%;
+
 }
 .parrafo1{
   font-size: 45px;
@@ -103,7 +107,7 @@
   font-size: 35px;
   text-align: left;
   margin-top: 0;
-  margin-right: 100px ;
+  
 }
 
   /* Estilos para la sección de servicios */
@@ -244,4 +248,55 @@
     text-align: left;
     font-family: 'Lucida Sans';
     font-weight: 350;
+  }
+  .Voces{
+    font-size: 50px;
+    text-align: left;
+    margin-left: 100px;
+    font-family: 'Lucida Sans';
+    font-weight: 350;
+  }
+
+  .testimonio-div{
+    margin-left: 100px;
+    display: flex;
+  }
+  .Testimonio-style{
+    color: blue;
+    font-size: 50px;
+    text-align: left;
+    font-family: 'Lucida Sans';
+    font-weight: 350;
+  }  
+
+  .Testimonio2-style{
+    margin-left: 10px;
+    font-size: 51px;
+    text-align: left;
+    font-family: 'Lucida Sans';
+    font-weight: 350;
+  }
+
+  .titulopatro, .image-row {
+    background-color: black;
+    
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%); 
+    padding-left: calc(50vw - 50%); 
+    padding-right: calc(50vw - 50%); 
+    position: relative; 
+  }
+  
+  .imagen-mimeinfo  {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+  }
+
+  .imagen-mimeinfo img {
+    
+    width: 100%;
+    height: auto;
+    max-width: 4000px;
+    
   }
