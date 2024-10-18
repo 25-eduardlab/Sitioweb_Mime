@@ -14,7 +14,7 @@ import Image7 from '../img/Dedos.png';
 
 
 
-const Content = ( {sectionRefs}) => {
+const Content = ( ) => {
   return (
     <div className="content-container">  
       {/* Sección de video */}
@@ -38,7 +38,7 @@ const Content = ( {sectionRefs}) => {
       </section>
 
       {/*Seccion Acerca de MIME*/}
-      <section ref={sectionRefs.seccion2}className="informacion-mime">
+      <section className="informacion-mime">
         <div className="texto-mimeinfo">
           <div className="sub-info">
             <p className="parrafo1">Acerca de</p>
@@ -60,12 +60,9 @@ const Content = ( {sectionRefs}) => {
       {/* Sección de Servicios */}
       <section className="services-section"> 
         <h2>Nuestros Servicios</h2>
-<<<<<<< HEAD
-=======
         </section>
       <section className="services-section">
         <h2>Lo que ofrecemos</h2>
->>>>>>> 6f81818222624cd9158191478719c33302faf354
         <div className="services-grid">
           <div className="service-card">
             <img src={cristhian} alt="Servicios TI" />{/*Aqui cambie una imagen (cristhian)*/}
@@ -86,20 +83,15 @@ const Content = ( {sectionRefs}) => {
         </div>
       </section>
 
-      <section ref={sectionRefs.seccion4}className="Testimonio">
+      <section className="Testimonio">
         <div className='testimonio-div'><h2 className='Testimonio-style'>Testimonios </h2>
           <h2 className='Testimonio2-style'>inspiradores </h2>
         </div>
 
         <div className="Inspirador">
           <video className="video-player" controls>
-<<<<<<< HEAD
-            <source src="ruta-del-video.mp4" type="video/mp4" />
-            Tu navegador no soporta videos.
-=======
           <source src="ruta-del-video.mp4" type="video/mp4" />
           Tu navegador no soporta videos pobre :V.
->>>>>>> 6f81818222624cd9158191478719c33302faf354
           </video>
         </div>
         <p className='Voces'>Otras voces</p>
@@ -134,7 +126,7 @@ const Content = ( {sectionRefs}) => {
 
         {/* Formulario */}
 
-        <section ref={sectionRefs.seccion5}className="contact-form">
+        <section className="contact-form">
           <h2>Contáctanos</h2>
           <form>
             <div className="form-row">

@@ -10,7 +10,7 @@ import resenas from '../svg/resenas.svg';
 import servicios from '../svg/servicios.svg';
 import { useState,useEffect } from 'react';
 
-const Header = ({ scrollToSection}) => {
+const Header = () => {
   /*Agrege una accion para el sroller cuando bajan mas*/
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () =>{
