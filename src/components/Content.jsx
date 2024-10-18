@@ -60,12 +60,10 @@ const Content = ( {sectionRefs}) => {
       {/* Sección de Servicios */}
       <section className="services-section"> 
         <h2>Nuestros Servicios</h2>
-<<<<<<< HEAD
-=======
+
         </section>
       <section className="services-section">
         <h2>Lo que ofrecemos</h2>
->>>>>>> 6f81818222624cd9158191478719c33302faf354
         <div className="services-grid">
           <div className="service-card">
             <img src={Image3} alt="Servicios TI" />{/*Aqui cambie una imagen (cristhian)*/}
@@ -93,13 +91,12 @@ const Content = ( {sectionRefs}) => {
 
         <div className="Inspirador">
           <video className="video-player" controls>
-<<<<<<< HEAD
+
             <source src="ruta-del-video.mp4" type="video/mp4" />
-            Tu navegador no soporta videos.
-=======
+
           <source src="ruta-del-video.mp4" type="video/mp4" />
           Tu navegador no soporta videos pobre :V.
->>>>>>> 6f81818222624cd9158191478719c33302faf354
+
           </video>
         </div>
         <p className='Voces'>Otras voces</p>
