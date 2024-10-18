@@ -1,5 +1,4 @@
 /* header.css */
-
 @font-face {
   font-family: nazation;
   src: url("../fonts/nasalization-rg.otf"); /*Nueva tipografia*/
@@ -9,13 +8,6 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
-
-.header-container {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    background-color: #000; /* Azul */
-    padding: 0 20px;
     margin:0;
     top: 0;
     left: 0;
@@ -105,28 +97,11 @@
     z-index: 1;
     transition: all 0.2s ease;
   }
-  
-.header-container.scrolled {
-  background-color: #000000b2;
-  height: 5rem;
-  backdrop-filter: blur(18px);
+.boton-menu, .boton-close, span img{
+  display: none;
 }
 
-.header-container:hover{
-  background-color: #000;
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-}
-
-.logo{
-  width: 15rem;
-  height: auto;
-  margin-right: 15px;
-}
-.logo.logoscrull {
+.logomovi{
   width: 10rem;
   height: 4rem;
   transition: all 0.3s ease;
@@ -144,7 +119,7 @@
   margin: 0 7px;
   font-size: 1.1rem;
   color: #eee;
-  font-family: 'Lucida Sans';
+  font-family: "Lucida Sans";
   font-weight: 800;
   position: relative;
   transition-duration: 400ms;
@@ -167,8 +142,4 @@
   transition-duration: 400ms;
   transition-property: width, left;
 }
-}
-
-
-
 }
