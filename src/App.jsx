@@ -14,6 +14,16 @@ const App = () => {
       <Content />
       
       {/* Aquí puedes agregar más componentes */}
+
+
+
+
+
+
+
+
+
+      
     </>
   );
 };
