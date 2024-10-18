@@ -14,49 +14,72 @@
     width: 100%;
     height: 6.5rem;
     position: fixed;
-    z-index: 1;
-    transition: all 0.2s ease;
+    transition: 0.3s;
+    z-index: 2;
   }
   .logomovi{
     width: 10rem;
     height: 4rem;
   }
-  .header-right{
-    position: absolute;
-    top: 100%;
-    left: -100%;
+  .fondo{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 1rem 4%;
-    background-color: #000;
-    color: #fff;
-    font-weight: 500;
-    font-family: "Lucida Sans";
+    height: 100%;
+    z-index: 1;
+    backdrop-filter: blur(12px);
+  }
+  .header-right{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: 0.2s;
+    background-image: linear-gradient(139deg,rgb(27, 43, 85) 0%,rgb(26, 41, 80) 40%,rgb(38, 61, 75) 100%);
+    border-radius: 10px 0 0 10px;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 3;
+  }
+  .menu.active{
+    width: 250px;
   }
   .boton-menu{
     margin-right: 4%;
   }
   .boton-menu img{
-    display: block;
     width: 40px;
     cursor: pointer;
   }
+  .boton-close{
+    margin: 5%;
+    margin-bottom: 25px;
+    width: 3rem;
+  }
+  .boton-close img{
+    padding: 3%;
+    width: 3rem;
+    cursor: pointer;
+  }
   .header-right span{
-    display: block;
-    font-size: 1rem;
-    margin: 5px 0;
-  }
-  .menu{
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    text-align: left;
-  }
-  .menu.active{
     display: flex;
+    width:min-content;
+    font-size: 1rem;
+    padding: 0px 30px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    color: #fff;
+    text-align: left;
+    font-weight: 100;
   }
+  span img{
+    margin-right: 10px;
+  };
 }
 @media only screen and (min-width: 765px) {
   /*Modificacion del contenedor de la cabezere*/
@@ -64,8 +87,6 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color: #000000; /* Azul */
-    padding: 0px 20px;
     padding: 0 20px;
     margin:0;
     top: 0;
@@ -76,19 +97,8 @@
     z-index: 1;
     transition: all 0.2s ease;
   }
-.boton-menu{
+.boton-menu, .boton-close, span img{
   display: none;
-}
-/*Se modifica el tomaño de la cabezera cuando baja 40px con el mause*/
-.header-container.scrolled {
-  background-color: #0000008f;
-  height: 5rem;
-  backdrop-filter: blur(15px);
-}
-
-/*cambio de color cuando se pasa el cursor*/
-.header-container:hover{
-  background-color: #000;
 }
 
 .logomovi{
@@ -97,11 +107,6 @@
   transition: all 0.3s ease;
 }
 
-/*Se diminuye el tamaño de la imagen junto a la cabezera*/
-.logomovi.logoscrull {
-  width: 8.5rem;
-  height: 3.5rem;
-}
 .header-right {
   display: flex;
   gap: 20px;

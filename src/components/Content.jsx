@@ -18,12 +18,13 @@ const Content = ( {sectionRefs}) => {
   return (
     <div className="content-container">  
       {/* Sección de video */}
-      <section ref={sectionRefs.seccion1}className="video-section">
-        <h2>Conoce Nuestro Video.</h2>
-        <video className="video-player" controls>
-          <source src="ruta-del-video.mp4" type="video/mp4" />
-          Tu navegador no soporta videos.
-        </video>
+      <section className="video-section">
+        <div className="bienvenida">
+          <h1>Impulsa tu Vision</h1>
+          <h2>Conectate al futuro con exito</h2>
+          <h3>Empieza tu futuro hoy</h3>
+          <div className="fondo"></div>
+        </div>
         <div className="titulopatro">
           <p>Colaboraciones que impulsan el cambio</p>
         </div>
@@ -57,7 +58,7 @@ const Content = ( {sectionRefs}) => {
       </section>
 
       {/* Sección de Servicios */}
-      <section ref={sectionRefs.seccion3}className="services-section"> 
+      <section className="services-section"> 
         <h2>Nuestros Servicios</h2>
         <div className="services-grid">
           <div className="service-card">

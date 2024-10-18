@@ -3,12 +3,16 @@ import '../styles/header.css'; // Importa los estilos de la cabecera
 import logo from '../img/mime_logo.png'; // Importa la imagen del logo
 import menu from '../svg/menu.svg';
 import close from '../svg/close.svg';
-import React, { useState,useEffect } from 'react';
+import inicio from '../svg/inicio.svg';
+import contactos from '../svg/contactos.svg';
+import nosotros from '../svg/nosotros.svg';
+import resenas from '../svg/resenas.svg';
+import servicios from '../svg/servicios.svg';
+import { useState,useEffect } from 'react';
 
 const Header = ({ scrollToSection}) => {
   /*Agrege una accion para el sroller cuando bajan mas*/
   const [isOpen, setIsOpen] = useState(false);
- 
   const toggleMenu = () =>{
     setIsOpen(!isOpen);
   }
@@ -35,14 +39,33 @@ const Header = ({ scrollToSection}) => {
         <img src={logo} alt="Logo" className={`logomovi ${scrolled ? "logoscrull" : ""}`}/>
       </div>
       <div className="boton-menu" onClick={toggleMenu}>
-        <img src={menu} alt="" />
+        <img src={isOpen ? close : menu} alt="" />
       </div>
+      {isOpen && <div className="fondo"></div>}
       <div className={`header-right ${isOpen ? "menu active" : "menu"}`}>
-        <span onClick = {() => scrollToSection('seccion1')}>Inicio</span>
-        <span onClick = {() => scrollToSection('seccion2')}>Nosotros</span>
-        <span onClick = {() => scrollToSection('seccion3')}>Servicios</span>
-        <span onClick = {() => scrollToSection('seccion4')}>Reseñas</span>
-        <span onClick = {() => scrollToSection('seccion5')}>Contacto</span>
+        <div className="boton-close" onClick={toggleMenu}>
+          <img src= {isOpen ? close : menu} alt="" />
+        </div>
+        <span>
+          <img src={inicio} alt="" />
+          Inicio
+        </span>
+        <span>
+          <img src={nosotros} alt="" />
+          Nosotros
+        </span>
+        <span>
+          <img src={servicios} alt="" />
+          Servicios
+        </span>
+        <span>
+          <img src={resenas} alt="" />
+          Reseñas
+        </span>
+        <span>
+          <img src={contactos} alt="" />
+          Contacto
+        </span>
       </div>
     </header>
   );

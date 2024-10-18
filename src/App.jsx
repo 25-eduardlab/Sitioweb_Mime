@@ -25,11 +25,9 @@ const App = () => {
   };
   return (
     <>
-      
-      
-        <Header scrollToSection={scrollToSection} />
-        <Content sectionRefs={sectionRefs} />
-        <PageFooter />
+      <Header />
+      <Content />
+      <PageFooter />
       {/* Aquí puedes agregar más componentes */}
     </>
   );

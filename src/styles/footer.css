@@ -5,6 +5,7 @@
         display: flex;
         flex-direction: column;
         font-family: calibri;
+        width: 100%;
     }
     .logo img{
         width: 12rem;
@@ -62,15 +63,17 @@
     .pageFooter{
         display: flex;
         flex-wrap: wrap;
-        gap: 3rem;
+        gap: 30px;
         font-family: calibri;
         text-align: left;
+        width: 100%;
     }
     .logo img{
         width: 12rem;
     }
     .licencias{
-        margin-right: 3vw;
+        flex: 1;
+        margin: 0 20px;
     }
     .licencias h2, .contactos h3{
         font-size: 1.4rem;
