@@ -68,12 +68,12 @@
   }
   .header-right span{
     display: flex;
-    width:min-content;
     font-size: 1rem;
     padding: 0px 30px;
     margin-bottom: 25px;
     cursor: pointer;
     color: #fff;
+    align-items:center;
     text-align: left;
     font-weight: 100;
   }
@@ -97,7 +97,7 @@
     z-index: 1;
     transition: all 0.2s ease;
   }
-.boton-menu, .boton-close, span img{
+.boton-menu, .boton-close, span img, .svg{
   display: none;
 }
 

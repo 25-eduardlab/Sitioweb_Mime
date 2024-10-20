@@ -3,7 +3,7 @@ import '../styles/header.css'; // Importa los estilos de la cabecera
 import logo from '../img/mime_logo.png'; // Importa la imagen del logo
 import menu from '../svg/menu.svg';
 import close from '../svg/close.svg';
-import inicio from '../svg/inicio.svg';
+import { IoMdHome } from "react-icons/io";
 import contactos from '../svg/contactos.svg';
 import nosotros from '../svg/nosotros.svg';
 import resenas from '../svg/resenas.svg';
@@ -46,10 +46,7 @@ const Header = () => {
         <div className="boton-close" onClick={toggleMenu}>
           <img src= {isOpen ? close : menu} alt="" />
         </div>
-        <span>
-          <img src={inicio} alt="" />
-          Inicio
-        </span>
+        <span><IoMdHome size= "2rem" className="svg"/>Inicio</span>
         <span>
           <img src={nosotros} alt="" />
           Nosotros
