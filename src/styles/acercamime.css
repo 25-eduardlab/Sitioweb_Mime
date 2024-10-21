@@ -1,0 +1,42 @@
+
+  
+.texto-mimeinfo{
+    display: flex;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 4%;
+    margin-bottom: 150px;
+    width: 100%;
+    margin-right: 4%;
+    }
+    .sub-info{
+    font-family: Calibri;
+    width: 50%;
+    
+    }
+    .parrafo1{
+    font-size: 45px;
+    text-align: justify;
+    margin-bottom: 0;
+    }
+    .sub-titulo{
+    display: flex;
+    font-size: 70px;
+    text-align: justify;
+    font-weight: 800;
+    }
+    .parrafo2{
+    color: #007bff ;
+    margin-top: 0;
+    margin-right: 20px;
+    }
+    .parrafo3{
+    margin-top: 0;
+    }
+    .parrafo4{
+    font-size: 35px;
+    text-align: left;
+    margin-top: 0;
+    
+    }
+

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import '../styles/header.css'; // Importa los estilos de la cabecera
 import logo from '../img/mime_logo.png'; // Importa la imagen del logo
 import { IoMdMenu } from "react-icons/io";
