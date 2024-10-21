@@ -1,0 +1,25 @@
+
+.titulopatro{
+    text-align: justify;
+    color: #000;
+    padding-left: 4%;
+    font-size: 40px;
+    font-family: "Calibri";
+    font-weight: 400;
+  
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem; /* Espacio entre las imágenes */
+  }
+
+  
+.patrocinadores {
+    margin: 4rem 0; /* Distancia entre el video e imagen 1 */
+    width: 10rem;
+    height: 5rem;
+  }
+  
