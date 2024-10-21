@@ -1,13 +1,13 @@
 import React from 'react';
 import '../styles/header.css'; // Importa los estilos de la cabecera
 import logo from '../img/mime_logo.png'; // Importa la imagen del logo
-import menu from '../svg/menu.svg';
-import close from '../svg/close.svg';
+import { IoMdMenu } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 import { IoMdHome } from "react-icons/io";
-import contactos from '../svg/contactos.svg';
-import nosotros from '../svg/nosotros.svg';
-import resenas from '../svg/resenas.svg';
-import servicios from '../svg/servicios.svg';
+import { FaUsers } from "react-icons/fa6";
+import { MdDesignServices } from "react-icons/md";
+import { MdOutlineReviews } from "react-icons/md";
+import { MdOutlineContacts } from "react-icons/md";
 import { useState,useEffect } from 'react';
 
 const Header = () => {
@@ -18,6 +18,17 @@ const Header = () => {
   }
 
   const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    if (isOpen){
+      document.body.style.overflow = "hidden";
+    }else{
+      document.body.style.overflow = "auto";
+    }
+    return() =>{
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpen]);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 40) {
@@ -32,37 +43,23 @@ const Header = () => {
     };
   }, []);
 
-//Cambie el nombre de la clase por que era igual al alt, lo cambio logomovi por movimiento :V
+//Cambie el nombre de la clase por que era igual al alt, lo cambio logomovi por movimiento 
   return (
     <header className={`header-container bg-black ${scrolled ? "scrolled" : ""}`}>
       <div className="header-left">
         <img src={logo} alt="Logo" className={`logomovi ${scrolled ? "logoscrull" : ""}`}/>
       </div>
-      <div className="boton-menu" onClick={toggleMenu}>
-        <img src={isOpen ? close : menu} alt="" />
-      </div>
+      <IoMdMenu size="3rem" className="boton-menu" onClick={toggleMenu}/>
       {isOpen && <div className="fondo"></div>}
       <div className={`header-right ${isOpen ? "menu active" : "menu"}`}>
-        <div className="boton-close" onClick={toggleMenu}>
-          <img src= {isOpen ? close : menu} alt="" />
+        <div className="boton-close">
+          <IoMdClose size="3rem" onClick={toggleMenu}/>
         </div>
-        <span><IoMdHome size= "2rem" className="svg"/>Inicio</span>
-        <span>
-          <img src={nosotros} alt="" />
-          Nosotros
-        </span>
-        <span>
-          <img src={servicios} alt="" />
-          Servicios
-        </span>
-        <span>
-          <img src={resenas} alt="" />
-          Reseñas
-        </span>
-        <span>
-          <img src={contactos} alt="" />
-          Contacto
-        </span>
+        <a href="#"><IoMdHome size= "2rem" className="svg"/>Inicio</a>
+        <a href="#"><FaUsers size= "2rem" className="svg"/>Nosotros</a>
+        <a href="#"><MdDesignServices size= "2rem" className="svg"/>Servicios</a>
+        <a href="#"><MdOutlineReviews size= "2rem" className="svg"/>Reseñas</a>
+        <a href="#"><MdOutlineContacts size="2rem" className="svg"/>Contacto</a>
       </div>
     </header>
   );
