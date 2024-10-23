@@ -3,65 +3,93 @@
   font-family: nazation;
   src: url("../fonts/nasalization-rg.otf"); /*Nueva tipografia*/
 }
-
-/*Modificacion del contenedor de la cabezere*/
+@media only screen and (max-width:765px) {
+  .header-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6.5rem;
+    position: fixed;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  .logomovi{
+    width: 10rem;
+    height: 4rem;
+  }
+  .header-right{
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    padding: 0 4%;
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Lucida Sans";
+  }
+  .boton-menu{
+    margin-right: 4%;
+  }
+  .boton-menu img{
+    width: 40px;
+    cursor: pointer;
+  }
+  .header-right span{
+    display: block;
+    font-size: 1rem;
+    margin: 15px 0;
+    cursor: pointer;
+  }
+  .menu{
+    max-height: 0;
+    overflow: hidden;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+    transition: 0.5s;
+  }
+  .menu.active{
+    max-height: 500px;
+  }
+}
+@media only screen and (min-width: 765px) {
+  /*Modificacion del contenedor de la cabezere*/
 .header-container {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color: #000; /* Azul */
     padding: 0 20px;
     margin:0;
     top: 0;
     left: 0;
     width: 100%;
-    height: 7rem;
+    height: 6.5rem;
     position: fixed;
-    z-index: 1000;
+    z-index: 1;
     transition: all 0.2s ease;
   }
-
-/*Se modifica el tomaño de la cabezera cuando baja 40px con el mause*/
-.header-container.scrolled {
-  background-color: #0000008f;
-  height: 5rem;
-  backdrop-filter: blur(15px);
-}
-
-/*cambio de color cuando se pasa el cursor*/
-.header-container:hover{
-  background-color: #000;
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
+.boton-menu{
+  display: none;
 }
 
 .logomovi{
-  width: 15rem;
-  height: 6rem;
-  transition: all 0.3s ease;
-  will-change: filter;
-}
-
-/*Se diminuye el tamaño de la imagen junto a la cabezera*/
-.logomovi.logoscrull {
   width: 10rem;
   height: 4rem;
-}
-
-.header-title {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 3vw;
+  transition: all 0.3s ease;
 }
 
 .header-right {
   display: flex;
   gap: 20px;
-  color: #ffffff;
-  padding-right: 70px;
+  color: #fff;
+  padding-right: 30px;
 }
 
 .header-right span{
@@ -72,13 +100,8 @@
   font-family: "Lucida Sans";
   font-weight: 800;
   position: relative;
-  text-transform:capitalize;
   transition-duration: 400ms;
   transition-property: color;
-}
-.header-right span:focus,
-.header-right span:hover{
-  color: #fff;
 }
 .header-right span:focus:after,
 .header-right span:hover:after {
@@ -97,3 +120,5 @@
   transition-duration: 400ms;
   transition-property: width, left;
 }
+}
+

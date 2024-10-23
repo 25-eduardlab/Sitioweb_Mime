@@ -1,13 +1,44 @@
 .content-container {
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
     margin-top: 6rem;
+    height: auto;
   }
   
-  .video-section {
-    margin-bottom: 50px;
-  }
+.bienvenida{
+  min-height: 110vh;
+  padding: 12rem 9% 2rem;
+  max-width: 40rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  font-family: calibri;
+}
+.bienvenida .fondo{
+  position:absolute;
+  z-index: -1;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 45.5rem;
+  background-color: #05203d;
+}
+.bienvenida h1{
+  font-size: 1.5rem;
+  color: #555;
+}
+.bienvenida h2{
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+}
+.bienvenida h3{
+  font-size: 1.5rem;
+  margin-top: 12px;
+  background-color: #fff;
+  padding: 2% 3%;
+  border-radius: 16px;
+  width: fit-content;
+}
   
   .video-player {
     width: 80%;
@@ -18,8 +49,8 @@
   .titulopatro{
     text-align: justify;
     color: #000;
-    margin-left: 3rem;
-    font-size: 2.5rem;
+    padding-left: 4%;
+    font-size: 40px;
     font-family: "Calibri";
     font-weight: 800;
   }
@@ -37,29 +68,67 @@
     height: 5rem;
 }
 
+/*Estilos para la seccion de informacion de MIME*/
+.texto-mimeinfo{
+  display: flex;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 4%;
+  margin-bottom: 150px;
+  width: 50%;
+}
+.sub-info{
+  font-family: Calibri;
+}
+.parrafo1{
+  font-size: 45px;
+  text-align: justify;
+  margin-bottom: 0;
+}
+.sub-titulo{
+  display: flex;
+  font-size: 70px;
+  text-align: justify;
+  font-weight: 800;
+}
+.parrafo2{
+  color: #007bff ;
+  margin-top: 0;
+  margin-right: 20px;
+}
+.parrafo3{
+  margin-top: 0;
+}
+.parrafo4{
+  font-size: 35px;
+  text-align: left;
+  margin-top: 0;
+  margin-right: 100px ;
+}
+
   /* Estilos para la sección de servicios */
   .services-section {
     margin-top: 50px;
     text-align: center;
-  }
+}
   
-  .services-grid {
+.services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-top: 30px;
   }
   
-  .service-card {
+.service-card {
     padding:5px;
     border: 1px solid #ccc;
     border-radius: 10px;
     transition: transform 0.3s ease;
   }
   
-  .service-card:hover {
+.service-card:hover {
     transform: scale(1.05);
-  }
+}
   
   /* Estilos para la galería de imágenes */
   .custom-gallery-grid {
@@ -117,62 +186,90 @@
   }
   
   
-  /* Estilos para el formulario */
-  .contact-form {
-    margin-top: 40px;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 48%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  .contact-form textarea {
-    width: 100%;
-    height: 100px;
-  }
-  
-  .contact-form button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .contact-form button:hover {
-    background-color: #0056b3;
-  }
-  
-  .Voces{
-    font-size: 50px;
-    text-align: left;
-    margin-left: 100px;
-    font-family: 'Lucida Sans';
-    font-weight: 350;
-  }
+/* Fondo y alineación del formulario */
+.contact-form {  
+  margin: 50px 0 50px auto; 
+  width: 850px; 
+  border: none;  
+  border-radius: 10px;  
+  padding: 40px;   
+  display: flex;  
+  flex-direction: column;  
+  align-items: flex-end; 
+}
 
-  .testimonio-div{
-    margin-left: 100px;
-    display: flex;
-  }
-  .Testimonio-style{
-    color: blue;
-    font-size: 50px;
-    text-align: left;
-    font-family: 'Lucida Sans';
-    font-weight: 350;
-  }  
+/* Estilos de los inputs y textarea */
+.contact-form input,  
+.contact-form textarea {  
+  width: 95%; 
+  padding: 14px;  
+  margin: 10px 0;  
+  border-radius: 4px;  
+  border: 2px solid black;  
+  box-sizing: border-box;  
+  background-color: #fff;  
+  color: black;  
+  font-family: 'Calibri Light', sans-serif;  
+  font-size: 16px;  
+}
 
-  .Testimonio2-style{
-    margin-left: 10px;
-    font-size: 51px;
-    text-align: left;
-    font-family: 'Lucida Sans';
-    font-weight: 350;
-  }
+/* Estilo para el placeholder (texto de entrada) */
+.contact-form input::placeholder,  
+.contact-form textarea::placeholder {  
+  color: black; /* Placeholder en negro */  
+}
+
+/* Ajuste de altura del textarea */
+.contact-form textarea {  
+  height: 150px;  
+}
+
+/* Estilos del botón enviar */
+.contact-form button {  
+  padding: 14px 0;  
+  background-color: #007bff;   
+  color: black;  
+  border: none;  
+  border-radius: 4px;  
+  cursor: pointer;  
+  width: 95%; /* Botón alineado con los inputs */  
+  font-size: 18px; /* Aumentar tamaño de fuente del botón */  
+  font-family: 'Calibri Bold', sans-serif; /* Cambiar a Calibri Bold */  
+  transition: background-color 0.3s;  
+  margin-top: 20px; /* Espacio arriba del botón */
+}
+
+/* Efecto hover en el botón */
+.contact-form button:hover {  
+  background-color: #0056b3; /* Cambia el color al hacer hover */  
+}
+
+/* Estilo para el título "Contáctanos" */
+.contact-form h2 {  
+  color: black; /* Cambiar color del título a negro */  
+  font-family: 'Calibri Light', sans-serif;  
+  font-size: 36px; /* Aumentar tamaño del título */  
+  text-align: right; /* Título alineado a la derecha */  
+  margin-bottom: 30px; /* Espacio debajo del título */  
+}
+
+/* Asegurar que todo el texto en el formulario sea negro */
+.contact-form p,  
+.contact-form label {  
+  color: black; /* Cambiar color del texto a negro */  
+  font-family: 'Calibri Light', sans-serif;  
+  font-size: 16px;  
+}
+
+/* Ajustes adicionales para el formulario en 2 líneas - inputs alineados a la derecha */
+.form-row {  
+  display: flex;  
+  justify-content: flex-end; /* Inputs alineados a la derecha */  
+  width: 95%;  
+  margin: 10px 0;  
+}
+
+.form-row input {  
+  width: 48%; /* Ancho de cada input en la fila */  
+  margin: 0 1%; /* Espacio entre los inputs */  
+}
