@@ -231,68 +231,68 @@
     font-weight: 350;
   }
 
-  .testimonio-div{
-    margin-left: 100px;
-    display: flex;
-  }
-  .Testimonio-style{
-    color: blue;
-    font-size: 50px;
-    text-align: left;
-    font-family: 'Lucida Sans';
-    font-weight: 350;
-  }  
+.testimonio-div{
+  margin-left: 100px;
+  display: flex;
+}
+.Testimonio-style{
+  color: blue;
+  font-size: 50px;
+  text-align: left;
+  font-family: 'Lucida Sans';
+  font-weight: 350;
+}  
 
-  .Testimonio2-style{
-    margin-left: 10px;
-    font-size: 51px;
-    text-align: left;
-    font-family: 'Lucida Sans';
-    font-weight: 350;
-  }
-  .Voces{
-    font-size: 50px;
-    text-align: left;
-    margin-left: 100px;
-    font-family: 'Lucida Sans';
-    font-weight: 350;
-  }
+.Testimonio2-style{
+  margin-left: 10px;
+  font-size: 51px;
+  text-align: left;
+  font-family: 'Lucida Sans';
+  font-weight: 350;
+}
+.Voces{
+  font-size: 50px;
+  text-align: left;
+  margin-left: 100px;
+  font-family: 'Lucida Sans';
+  font-weight: 350;
+}
 
-  .testimonio-div{
-    margin-left: 100px;
-    display: flex;
-  }
-  .Testimonio-style{
-    color: blue;
-    font-size: 50px;
-    text-align: left;
-    font-family: 'Lucida Sans';
-    font-weight: 350;
-  }  
+.testimonio-div{
+  margin-left: 100px;
+  display: flex;
+}
+.Testimonio-style{
+  color: blue;
+  font-size: 50px;
+  text-align: left;
+  font-family: 'Lucida Sans';
+  font-weight: 350;
+}  
 
-  .Testimonio2-style{
-    margin-left: 10px;
-    font-size: 51px;
-    text-align: left;
-    font-family: 'Lucida Sans';
-    font-weight: 350;
-  }
+.Testimonio2-style{
+  margin-left: 10px;
+  font-size: 51px;
+  text-align: left;
+  font-family: 'Lucida Sans';
+  font-weight: 350;
+}
 
-  .titulopatro, .image-row {
-    background-color: black;
-    
-    width: 100vw; 
-    margin-left: calc(-50vw + 50%); 
-    padding-left: calc(50vw - 50%); 
-    padding-right: calc(50vw - 50%); 
-    position: relative; 
-  }
+.titulopatro, .image-row {
+  background-color: black;
   
-  .imagen-mimeinfo  {
-    display: flex;
-    justify-content: center;
-    width: 40%;
-  }
+  width: 100vw; 
+  margin-left: calc(-50vw + 50%); 
+  padding-left: calc(50vw - 50%); 
+  padding-right: calc(50vw - 50%); 
+  position: relative; 
+}
+
+.imagen-mimeinfo  {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
 
   .imagen-mimeinfo img {
     
