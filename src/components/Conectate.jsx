@@ -6,8 +6,8 @@ import '../styles/conectate.css'
 
 const Conectate =()=>{
     return (
-         
-        
+        <div className="content-container">  
+          {/* Sección de video */}
           <section className="video-section">
             <div className="bienvenida">
               <h1>Impulsa tu Vision</h1>
@@ -16,7 +16,7 @@ const Conectate =()=>{
               <div className="fondo"></div>
             </div>
           </section>
-          
+        </div>
 
     );
 };

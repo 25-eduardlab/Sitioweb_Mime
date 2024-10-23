@@ -1,4 +1,11 @@
 
+/*Estilos para la seccion de informacion de MIME*/
+.content-container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 6rem;
+    height: auto;
+  }
   
 .texto-mimeinfo{
     display: flex;
@@ -39,4 +46,3 @@
     margin-top: 0;
     
     }
-
