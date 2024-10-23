@@ -41,12 +41,13 @@
     border-radius: 10px 0 0 10px;
     padding: 1rem 0;
     display: flex;
+    border-top: 3px solid rgb(126, 211, 245);
     flex-direction: column;
     gap: 10px;
     z-index: 3;
   }
   .menu.active{
-    width: 250px;
+    width: 280px;
     overflow-y: auto;
   }
   .boton-menu{
@@ -55,11 +56,16 @@
     cursor: pointer;
   }
   .boton-close{
-    margin: 5%;
+    margin: 4%;
     margin-bottom: 25px;
     color: #fff;
     cursor: pointer;
     width: min-content;
+    transition: 0.3s;
+  }
+  .boton-close:hover{
+    color: red;
+    transform: translate(1px, -1px)
   }
   .header-right a{
     display: flex;

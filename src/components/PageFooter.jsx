@@ -1,8 +1,8 @@
 import React from 'react';
 import mime from '../img/mime_logo.png'
 import '../styles/footer.css';
-import telefono from "../svg/telefono.svg"
-import email from "../svg/email.svg"
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { MdOutlineEmail } from "react-icons/md";
 
 const PageFooter = () =>{
     const licencias = ["Licencia1","Licencia2","Licencia3","Licencia4","Licencia5","Licencia6"];
@@ -44,15 +44,11 @@ const PageFooter = () =>{
                 <h3>Contactanos</h3>
                 <div className="logotipos">
                     <div className="logo1">
-                        <div className="icon">
-                            <img src={telefono} alt="Telefono"/>
-                        </div>
+                        <BsFillTelephoneFill className="icon"/>
                         <span>+51 933 529 509</span>
                     </div>
                     <div className="logo2">
-                        <div className="icon">
-                            <img src={email} alt="Email" />
-                        </div>
+                        <MdOutlineEmail className='icon'/>
                         <span>contacto@mimeperu.com</span>
                     </div>
                 </div>
