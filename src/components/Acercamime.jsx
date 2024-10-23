@@ -15,7 +15,7 @@ const Acercamime = () => {
             <p className="parrafo3">Consultores</p>
           </div>
           <p className="parrafo4">
-            En MIME buscamos empoderar a empresas mediante soluciones integrales de informática y electricidad.
+            En MIME buscamos empoderar a empresas mediante soluciones integrales de informática y electricidad, combinando innovación tecnológica y excelencia en el servicio para garantizar eficiencia, seguridad y sostenibilidad en cada proyecto.
           </p>
         </div>
         <div className="imagen-mimeinfo">

@@ -12,6 +12,7 @@
     .sub-info{
     font-family: Calibri;
     width: 50%;
+    margin-top: 180px;
     
     }
     .parrafo1{
@@ -40,3 +41,17 @@
     
     }
 
+    .imagen-mimeinfo  {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+      }
+    
+    .imagen-mimeinfo img {
+        
+        width: 100%;
+        height: auto;
+        max-width: 4000px;
+        margin-top: 40px;
+        
+      }
