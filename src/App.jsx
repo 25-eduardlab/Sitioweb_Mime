@@ -15,15 +15,11 @@ const App = () => {
   return (
     <>
       <Header />
-      <div className="content-container">
       <Conectate/>
       <Colaboraciones/>
       <Acercamime/>
       <Ofrecemos/>
-      </div>   
       <PageFooter/>
-      
-      
     </>
   );
 };
