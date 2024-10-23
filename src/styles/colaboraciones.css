@@ -1,32 +1,48 @@
-.content-container {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 6rem;
-    height: auto;
+.colaboraciones-container {
+  background-color: #000; /* Fondo negro */
+  padding: 2rem;
+  text-align: center;
+}
+
+.colaboraciones-container h2 {
+  color: #00aaff; /* Azul suave */
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.colaboraciones-container .arrow {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Espacio entre los logos */
+}
+
+.logo {
+  width: 120px;  /* Tamaño fijo en ancho */
+  height: 60px;  /* Tamaño fijo en altura */
+  object-fit: contain; /* Mantiene las proporciones del logo */
+  filter: brightness(0) invert(1); /* Hace que los logos sean blancos sobre fondo negro */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+  .logos-container {
+    flex-wrap: wrap; /* Hacer que los logos se acomoden en varias filas en pantallas pequeñas */
+    gap: 1.5rem;
   }
 
-  
-.titulopatro{
-    text-align: justify;
-    color: #000;
-    padding-left: 4%;
-    font-size: 40px;
-    font-family: "Calibri";
-    font-weight: 400;
-  
+  .logo {
+    max-width: 100px; /* Ajusta el tamaño de los logos en dispositivos móviles */
   }
-  
-  .image-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem; /* Espacio entre las imágenes */
-  }
-
-  
-.patrocinadores {
-    margin: 4rem 0; /* Distancia entre el video e imagen 1 */
-    width: 10rem;
-    height: 5rem;
-  }
-  
+}
