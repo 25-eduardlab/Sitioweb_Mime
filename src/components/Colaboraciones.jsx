@@ -5,6 +5,9 @@ import intel from '../svg/intel.svg';
 import lenovo from '../svg/lenovo.svg';
 import microsoft from '../svg/microsoft.svg';
 import ruckus from '../svg/ruckus.svg';
+import { GoArrowDownRight } from "react-icons/go";
+import { FaAngleLeft } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
 
 const Colaboraciones = () => {
   const logos = [
@@ -14,16 +17,24 @@ const Colaboraciones = () => {
     { src: microsoft, alt: 'Microsoft' },
     { src: ruckus, alt: 'Ruckus' },
   ];
-
+  
   return (
     <div className="colaboraciones-container">
-      <h2>
-        Colaboraciones que Impulsan el Cambio <span className="arrow">↘</span>
-      </h2>
-      <div className="logos-container">
-        {logos.map((logo, index) => (
+      <div className="titulo mb-20">
+        <h2>Colaboraciones que Impulsan el Cambio<GoArrowDownRight size="2.5rem" className="mx-2"/></h2>
+      </div>
+      <div className="logos-container mb-10">
+        <div className="left">
+          <FaAngleLeft size = "5rem" color='#fff'/>
+        </div>
+        <div className="carrusel-items flex">
+          {logos.map((logo, index) => (
           <img key={index} src={logo.src} alt={logo.alt} className="logo" />
         ))}
+        </div>
+        <div className="rigth">
+          <FaAngleRight size="5rem" color='#fff'/>
+        </div>
       </div>
     </div>
   );
