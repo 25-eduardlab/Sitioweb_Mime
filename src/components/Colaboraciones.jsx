@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import '../styles/colaboraciones.css';
 import cisco from '../svg/cisco.svg';
 import intel from '../svg/intel.svg';
@@ -17,23 +17,74 @@ const Colaboraciones = () => {
     { src: microsoft, alt: 'Microsoft' },
     { src: ruckus, alt: 'Ruckus' },
   ];
+
+  const carruselRef = useRef(null);
+  const step = 1;
+  let intervalo = useRef(null);
+
+  useEffect(() => {
+    const carrusel = carruselRef.current;
+
+    const duplicarContenido = () => {
+      carrusel.innerHTML += carrusel.innerHTML;
+    };
+
+    duplicarContenido();
+
+    const start = () => {
+      intervalo.current = setInterval(() => {
+        carrusel.scrollLeft += step;
+        if (carrusel.scrollLeft >= carrusel.scrollWidth / 2 ) {
+          carrusel.scrollLeft = 0;
+        }
+      }, 25);
+    };
+
+    const stop = () => {
+      clearInterval(intervalo.current);
+    };
+
+    carrusel.addEventListener("mouseover", stop);
+    carrusel.addEventListener("mouseout", start);
+
+    start();
+
+    return () => {
+      stop();
+      carrusel.removeEventListener("mouseover", stop);
+      carrusel.removeEventListener("mouseout", start);
+    };
+  }, []);
+
+  const scrollLeft = () => {
+    const carrusel = carruselRef.current;
+    carrusel.scrollLeft -= carrusel.offsetWidth / 4;
+
+
+  };
   
+  const scrollRight = () => {
+    const carrusel = carruselRef.current;
+    carrusel.scrollLeft += carrusel.offsetWidth / 4;
+  };
+
   return (
     <div className="colaboraciones-container">
-      <div className="titulo mb-20">
-        <h2>Colaboraciones que Impulsan el Cambio<GoArrowDownRight size="2.5rem" className="mx-2"/></h2>
+      <div className="titulo mb-20 flex">
+        <h2>Colaboraciones que Impulsan el Cambio</h2>
+        <GoArrowDownRight size="3rem" className="mx-2" color='#0ea5e9'/>
       </div>
-      <div className="logos-container mb-10">
-        <div className="left">
-          <FaAngleLeft size = "5rem" color='#fff'/>
+      <div className="logos-container mb-10" >
+        <div className="left cursor-pointer transition " >
+          <FaAngleLeft size = "4.5rem" onClick={scrollLeft}/>
         </div>
-        <div className="carrusel-items flex">
+        <div className="carrusel-items flex" ref={carruselRef}>
           {logos.map((logo, index) => (
-          <img key={index} src={logo.src} alt={logo.alt} className="logo" />
+          <img key={index} src={logo.src} alt={logo.alt} className="logo cursor-pointer" />
         ))}
         </div>
-        <div className="rigth">
-          <FaAngleRight size="5rem" color='#fff'/>
+        <div className="rigth cursor-pointer transition" >
+          <FaAngleRight size="4.5rem" onClick={scrollRight}/>
         </div>
       </div>
     </div>
