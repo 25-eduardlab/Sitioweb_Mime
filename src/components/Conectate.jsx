@@ -6,18 +6,21 @@ import '../styles/conectate.css'
 
 const Conectate =()=>{
     return (
-        <div className="content-container">  
-          {/* Sección de video */}
-          <section className="video-section">
-            <div className="bienvenida">
-              <h1>Impulsa tu Vision</h1>
-              <h2>Conectate al futuro con exito</h2>
-              <h3>Empieza tu futuro hoy</h3>
-              <div className="fondo"></div>
+      <section className="conectate-container relative bg-cover bg-center bg-no-repeat">
+        <div className="fondo-nigth absolute inset-0"></div>
+        <div className="main-content relative flex items-center">
+          <div className="text-container max-w-xl">
+            <h1 className="titulo-principal">
+              Piensa a lo Grande<span>Domina las Nuevas Tecnologias</span>
+            </h1>
+            <p className="descripcion">Juntos, transformaremos tu Vision en Realidad.</p>
+            <div className="button-container">
+              <a href="#" className="contactanos">Contactanos</a>
+              <a href="#" className="empieza-ahora">Empieza ahora</a>
             </div>
-          </section>
+          </div>
         </div>
-
+      </section>
     );
 };
 

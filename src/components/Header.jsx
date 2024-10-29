@@ -43,16 +43,15 @@ const Header = () => {
     };
   }, []);
 
-//Cambie el nombre de la clase por que era igual al alt, lo cambio logomovi por movimiento 
   return (
-    <header className={`header-container bg-black ${scrolled ? "scrolled" : ""}`}>
+    <header className={`header-container bg-black flex items-center justify-between w-full fixed ${scrolled ? "scrolled" : ""}`}>
       <div className="header-left">
-        <img src={logo} alt="Logo" className={`logomovi ${scrolled ? "logoscrull" : ""}`}/>
+        <img src={logo} alt="Logo" className={`logomovi w-40 h-16 ${scrolled ? "logoscrull" : ""}`}/>
       </div>
-      <IoMdMenu size="3rem" className="boton-menu" onClick={toggleMenu}/>
+      <IoMdMenu size="3rem" className="boton-menu cursor-pointer" onClick={toggleMenu} color="#fff"/>
       {isOpen && <div className="fondo"></div>}
-      <div className={`header-right ${isOpen ? "menu active" : "menu"}`}>
-        <div className="boton-close">
+      <div className={`header-right flex ${isOpen ? "menu active" : "menu"}`}>
+        <div className="boton-close w-fit cursor-pointer">
           <IoMdClose size="3rem" onClick={toggleMenu}/>
         </div>
         <a href="#"><IoMdHome size= "2rem" className="svg"/>Inicio</a>

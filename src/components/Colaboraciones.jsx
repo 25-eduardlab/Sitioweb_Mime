@@ -71,8 +71,8 @@ const Colaboraciones = () => {
   return (
     <div className="colaboraciones-container">
       <div className="titulo mb-20 flex">
-        <h2>Colaboraciones que Impulsan el Cambio</h2>
-        <GoArrowDownRight size="3rem" className="mx-2" color='#0ea5e9'/>
+        <h2 className="font-bold text-left">Colaboraciones que Impulsan el Cambio</h2>
+        <GoArrowDownRight size="3rem" className="mx-2 rounded-full" color='#0ea5e9'/>
       </div>
       <div className="logos-container mb-10" >
         <div className="left cursor-pointer transition " >

@@ -11,8 +11,6 @@
   color: transparent;
   animation: mover-gradiente 2s infinite alternate;
   font-size: 2rem;
-  font-weight: bold;
-  text-align: left;
 }
 .logos-container {
   display: flex;
@@ -25,7 +23,7 @@
   margin:6px auto;
   padding: 1rem;
   overflow: hidden;
-  border-radius: 50px; /* para bordes redondeados */
+  border-radius: 50px;
 }
 .logo {
   position: relative;
@@ -39,7 +37,6 @@
 }
 
 .mx-2{
-  border-radius: 50%;
   border-bottom: 2px solid #0ea5e9;
   border-right: 2px solid #0ea5e9;
   filter: drop-shadow(0 0 10px rgba(70, 85, 223, 0.8));
