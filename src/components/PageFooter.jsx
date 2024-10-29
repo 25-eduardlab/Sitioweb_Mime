@@ -6,6 +6,7 @@ import email from "../svg/email.svg"
 
 const PageFooter = () =>{
     const licencias = ["Licencia1","Licencia2","Licencia3","Licencia4","Licencia5","Licencia6"];
+    const licencias3 = ["Licencia1","Licencia2","Licencia3","Licencia4","Licencia5","Licencia6"];
     const licencias2 = ["Licencia1","Licencia2","Licencia3","Licencia4","Licencia5","Licencia6"];
     return(
         <div className="pageFooter bg-black p-10 text-white">
@@ -30,6 +31,15 @@ const PageFooter = () =>{
                     ))}
                 </div>
             </div>
+            <div className="licencias">
+                {/*Licencias*/}
+                <h2>Sobre nosotros</h2>
+                <div className="enlaces">
+                    {licencias3.map((licencias3,index) =>(
+                        <p key={index}>{licencias3}</p>
+                    ))}
+                </div>
+            </div>
             <div className="contactos">
                 <h3>Contactanos</h3>
                 <div className="logotipos">
@@ -51,7 +61,6 @@ const PageFooter = () =>{
                 <p>Web: www.mimeperu.com</p>
                 <p>© Copyright MIME. All Rights Reserved</p>
             </div>
-            
         </div>
     );
 };
