@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from './components/Header';
 import PageFooter from './components/PageFooter';
-import Conectate from './components/conectate';
-import Colaboraciones from './components/colaboraciones';
-import Acercamime from './components/acercamime';
+import Conectate from './components/Conectate';
+import Colaboraciones from './components/Colaboraciones';
+import Acercamime from './components/Acercamime';
 import Ofrecemos from './components/Ofrecemos';
 
 import './App.css';
