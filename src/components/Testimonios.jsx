@@ -29,15 +29,7 @@ const Testimonios = () => {
         <span className="highlight">Testimonios</span> Inspiradores
       </h2>
       <div className="video-container">
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/CSFKob_L42o"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+      <iframe width="1000" height="450" src="https://www.youtube.com/embed/Rgh9Lz3BYyY?si=xD_2k8aTCbeg0EKJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       
       <div className="otras-voces-container">

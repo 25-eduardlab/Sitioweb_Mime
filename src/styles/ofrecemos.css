@@ -1,28 +1,34 @@
 .ofrecemos-container {
   text-align: center;
   padding: 2rem;
-  background-color: #f0f0f0;
+  background-color: #d8d6d6;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4rem;
+  gap: 6rem;
 }
 
 .card {
   position: relative;
-  width: 500px; /* Aumenta el tamaño del ancho */
-  height: 400px; /* Aumenta el tamaño del alto */
+  width: 700px; /* Aumenta el tamaño del ancho */
+  height: 500px; /* Aumenta el tamaño del alto */
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+
 }
 
 .card:hover {
   transform: scale(1.05);
+}
+.card-image {
+  width: 100%;
+  height: 420px; /* Ajusta esta altura según tus necesidades */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga del contenedor */
 }
 
 .card-image img {
@@ -48,6 +54,7 @@
   padding: 1rem;
   transition: opacity 0.3s ease;
   border-radius: 10px;
+  
 }
 
 .card:hover .card-overlay {
@@ -63,10 +70,12 @@
 .card p {
   font-size: 1rem; /* Ajusta el tamaño del texto de la descripción */
   line-height: 1.4;
+  margin: 0 ;
+  max-width: 80%;
 }
 
 .ofrecemos-container h2 {
-  font-size: 2.5rem; /* Tamaño grande del texto */
+  font-size: 4rem; /* Tamaño grande del texto */
   font-weight: bold; /* Negrita */
   font-family: 'Arial', sans-serif; /* Puedes cambiar a otra fuente si lo deseas */
   margin-bottom: 2rem; /* Espacio entre el título y las tarjetas */
