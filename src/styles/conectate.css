@@ -1,4 +1,9 @@
-
+.content-container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 6rem;
+    height: auto;
+  }
   
   .bienvenida{
   min-height: 110vh;

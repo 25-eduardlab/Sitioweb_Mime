@@ -5,7 +5,8 @@ import Image7 from '../img/Dedos.png';
 
 const Acercamime = () => {
     return (
-    
+    <div className="content-container">
+      {/* Sección Acerca de MIME */}
       <section className="informacion-mime">
       <div className="texto-mimeinfo">
         <div className="sub-info">
@@ -19,12 +20,12 @@ const Acercamime = () => {
           </p>
         </div>
         <div className="imagen-mimeinfo">
-          
+          {/* Sección de imagen */}
           <img src={Image7} alt="Dedos"/>
         </div>
       </div>
     </section>
-    
+    </div>
     );
 };
 

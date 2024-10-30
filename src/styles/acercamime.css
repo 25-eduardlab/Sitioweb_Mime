@@ -1,57 +1,65 @@
 
+/*Estilos para la seccion de informacion de MIME*/
+.content-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+    margin-top: 6rem;
+    height: auto;
+  }
   
 .texto-mimeinfo{
     display: flex;
-    height: auto;
-    margin-top: 10px;
-    margin-left: 4%;
-    margin-bottom: 150px;
-    width: 100%;
-    margin-right: 4%;
-    }
-    .sub-info{
-    font-family: Calibri;
-    width: 50%;
-    margin-top: 180px;
+    flex-wrap: wrap;
+    margin: 10px 0 150px 0;
+    justify-content: center;
     
     }
-    .parrafo1{
-    font-size: 45px;
+  .sub-info{
+    flex: 1 1 50%;
+    padding: 0 4 0 4 rem;
+    font-family: Calibri;
+    margin-top: 13rem;
+    
+    }
+  .parrafo1{
+    font-size: clamp(2rem, 5vw, 3rem);
     text-align: justify;
     margin-bottom: 0;
     }
-    .sub-titulo{
+  .sub-titulo{
     display: flex;
-    font-size: 70px;
+    font-size: clamp(2.5rem, 6vw, 4rem);
     text-align: justify;
     font-weight: 800;
     }
-    .parrafo2{
+  .parrafo2{
     color: #007bff ;
     margin-top: 0;
-    margin-right: 20px;
+    margin-right: 1 rem;
     }
-    .parrafo3{
+  .parrafo3{
     margin-top: 0;
     }
-    .parrafo4{
-    font-size: 35px;
+  .parrafo4{
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     text-align: left;
     margin-top: 0;
     
     }
 
-    .imagen-mimeinfo  {
+  .imagen-mimeinfo  {
+        flex: 1 1 40%;
         display: flex;
         justify-content: center;
-        width: 40%;
+        margin-top: 40px;
       }
     
-    .imagen-mimeinfo img {
+  .imagen-mimeinfo img {
         
-        width: 100%;
-        height: auto;
-        max-width: 4000px;
-        margin-top: 40px;
-        
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 900px;
+      
       }

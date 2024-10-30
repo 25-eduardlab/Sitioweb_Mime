@@ -1,0 +1,96 @@
+.testimonios-container {
+    background-color: #000;
+    color: white;
+    padding: 2rem;
+    text-align: center
+  }
+  
+  .testimonios-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .testimonios-container .highlight {
+    color: #00aaff;
+  }
+  
+  .video-container {
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Otras Voces Section */
+  .otras-voces-container {
+    margin-top: 3rem;
+  }
+  
+  .otras-voces-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 3rem; /* Ajusta este valor para más o menos espacio entre otras voces y las imagnes*/
+    color: #ccc;
+  }
+  
+  .logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .logo-card {
+    position: relative;
+    width: 550px;
+    height: 300px;
+    margin: 0 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .logo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+  }
+  
+  .logo-info {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-card:hover .logo-info {
+    transform: translateX(-100%);
+  }
+  
+  .logo-info h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .logo-info p {
+    font-size: 0.8rem;
+  }
+  
