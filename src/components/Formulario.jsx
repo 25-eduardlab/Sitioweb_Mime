@@ -5,9 +5,8 @@ import Video1 from '../video/Oscuro.mp4'
 const Formulario = () => {
   return (
     <div className="formulario-container">
-      <video autoPlay loop muted className="video-background">
-        <source src={Video1} type="video/mp4" />
-        Eres pobre
+      <video autoPlay loop muted className="video-background"  width="1920" height="1080">
+        <source src={Video1} type="video/mp4"/>
       </video>
       <h2>Estamos aquí para ti</h2>
       <div className="Cuadro"> 
@@ -32,9 +31,7 @@ const Formulario = () => {
           </div>
         </form>
       </div>
-      
     </div>
   );
 };
-
 export default Formulario;

@@ -37,18 +37,21 @@
     margin-bottom: 3rem; /* Ajusta este valor para más o menos espacio entre otras voces y las imagnes*/
     color: #ccc;
   }
+  .logos-container{
+    overflow: hidden;
+    padding: 1rem;
+  }
   
   .logos {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    gap: 2rem;
+    justify-content: center;
   }
   
   .logo-card {
     position: relative;
     width: 550px;
     height: 300px;
-    margin: 0 10px;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -93,4 +96,17 @@
   .logo-info p {
     font-size: 0.8rem;
   }
+
+@media (max-width: 768px) {
+  .logos-container{
+    flex-wrap: nowrap;
+  }
+  .logos{
+    gap: 0 1rem;
+  }
+  .logo-card{
+    width: 300px;
+    height: 200px;
+  }
+}
   
