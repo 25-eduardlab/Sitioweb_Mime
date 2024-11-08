@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/ofrecemos.css';
-import AI1  from'../img/IA1.jpg'
-import AI2  from'../img/IA2.jpeg'
-import AI3  from'../img/IA3.jpeg'
-import AI4  from'../img/IA4.jpeg'
+import AI1  from'../img/Servicios.jpg'
+import AI2  from'../img/infraestructura.jpeg'
+import AI3  from'../img/Aplicaciones.jpg'
+import AI4  from'../img/Distribucion.jpg'
 
 const Ofrecemos = () => {
   const services = [

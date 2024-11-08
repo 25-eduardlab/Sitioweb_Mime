@@ -1,132 +1,65 @@
-/* Estilos para la sección de información de MIME */
-.texto-mimeinfo {
-  display: flex;
-  align-items: center; 
-  margin: 0 4% 150px; /* Combina márgenes */
-  width: 100%;
-}
 
-.sub-info {
-  font-family: 'Roboto', sans-serif; /* Cambiado a Roboto */
-  width: 50%; /* Ajustar ancho para dar espacio a la imagen */
-}
-
-.parrafo1 {
-  font-family: 'Roboto', sans-serif; /* Cambiado a Roboto */
-  font-size: 70px; /* Tamaño para Acerca de */
-  font-weight: 700; 
-  text-align: justify;
-  margin-bottom: 0;
-}
-
-.sub-titulo {
-  display: flex;
-  font-size: 70px; /* Tamaño para MIME y Consultores */
-  font-family: 'Roboto', sans-serif; 
-  font-weight: 800;
-}
-
-.parrafo2 {
-  color: #3dbaec;
-  margin-top: 0;
-  margin-right: 20px;
-  font-size: 70px;
-  font-family: 'Roboto', sans-serif; /* Cambiado a Roboto */
-}
-
-.parrafo3 {
-  margin-top: 0;
-  font-size: 70px; 
-  font-family: 'Roboto', sans-serif; /* Cambiado a Roboto */
-}
-
-.parrafo4 {
-  font-size: 40px; 
-  text-align: justify;
-  margin-top: 0;
-  font-family: 'Calibri Light', sans-serif; /* Cambiado a Calibri Light */
-}
-
-/* Estilo para la imagen con animación */
-.imagen-mimeinfo {
-  width: 30%; /* Ajustar ancho para la imagen */
-  display: flex; 
-  justify-content: flex-start; 
-  margin-left: 100px; /* Espacio entre texto e imagen */
-}
-
-.imagen-mimeinfo img {
-  width: 100%; 
-  height: auto; 
-  max-width: 100%; 
-  animation: tocar 2s ease-in-out infinite; 
-}
-
-@keyframes tocar {
-  0%, 100% {
-    transform: translateY(0); 
+/*Estilos para la seccion de informacion de MIME*/
+.content-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+    margin-top: 6rem;
+    height: auto;
   }
-  50% {
-    transform: translateY(-10px); 
-  }
-}
+  
+.texto-mimeinfo{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 150px 0;
+    justify-content: center;
+    
+    }
+  .sub-info{
+    flex: 1 1 50%;
+    padding: 0 4 0 4 rem;
+    font-family: Calibri;
+    margin-top: 13rem;
+    
+    }
+  .parrafo1{
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: justify;
+    margin-bottom: 0;
+    }
+  .sub-titulo{
+    display: flex;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    text-align: justify;
+    font-weight: 800;
+    }
+  .parrafo2{
+    color: #007bff ;
+    margin-top: 0;
+    margin-right: 1 rem;
+    }
+  .parrafo3{
+    margin-top: 0;
+    }
+  .parrafo4{
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    text-align: left;
+    margin-top: 0;
+    
+    }
 
-/* Consultas de medios para responsividad */
-@media (max-width: 1024px) {
-  .texto-mimeinfo {
-    flex-direction: row; /* Mantener en fila, pero con menos espacio */
-    align-items: center;
-  }
-
-  .sub-info {
-    width: 60%; /* Aumentar ancho en pantallas más pequeñas */
-  }
-
-  .imagen-mimeinfo {
-    width: 40%; /* Aumentar ancho para la imagen */
-    margin-left: 50px; /* Reducir margen para mantener la proximidad */
-  }
-}
-
-@media (max-width: 768px) {
-  .texto-mimeinfo {
-    flex-direction: row; /* Mantener en fila */
-  }
-
-  .sub-info {
-    width: 70%; /* Aumentar ancho en pantallas más pequeñas */
-  }
-
-  .imagen-mimeinfo {
-    width: 30%; /* Ajustar ancho para la imagen */
-    margin-left: 20px; /* Reducir margen */
-  }
-
-  .parrafo1, .sub-titulo, .parrafo2, .parrafo3, .parrafo4 {
-    font-size: 5vw; /* Usar vw para tamaño responsivo */
-    min-font-size: 40px; /* Tamaño mínimo */
-  }
-}
-
-@media (max-width: 480px) {
-  .texto-mimeinfo {
-    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-    align-items: center;
-  }
-
-  .sub-info {
-    width: 100%; /* Ancho completo en pantallas pequeñas */
-    text-align: center; /* Centrar texto */
-  }
-
-  .imagen-mimeinfo {
-    width: 100%; /* Ancho completo para la imagen */
-    margin-left: 0; /* Eliminar margen */
-    justify-content: center; /* Centrar la imagen */
-  }
-
-  .parrafo1, .sub-titulo, .parrafo2, .parrafo3, .parrafo4 {
-    font-size: 5vw; /* Usar vw para tamaño responsivo */
-    min-font-size: 30px; /* Tamaño mínimo */
-  }
-}
+  .imagen-mimeinfo  {
+        flex: 1 1 40%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+      }
+    
+  .imagen-mimeinfo img {
+        
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 900px;
+      
+      }
