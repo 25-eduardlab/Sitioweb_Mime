@@ -3,6 +3,11 @@ import '../styles/header.css'; // Importa los estilos de la cabecera
 import logo from '../img/mime_logo.png'; // Importa la imagen del logo
 import menu from '../svg/menu.svg';
 import close from '../svg/close.svg';
+import inicio from '../svg/inicio.svg';
+import contactos from '../svg/contactos.svg';
+import nosotros from '../svg/nosotros.svg';
+import resenas from '../svg/resenas.svg';
+import servicios from '../svg/servicios.svg';
 import { useState,useEffect } from 'react';
 
 const Header = () => {
@@ -36,12 +41,31 @@ const Header = () => {
       <div className="boton-menu" onClick={toggleMenu}>
         <img src={isOpen ? close : menu} alt="" />
       </div>
+      {isOpen && <div className="fondo"></div>}
       <div className={`header-right ${isOpen ? "menu active" : "menu"}`}>
-        <span>Inicio</span>
-        <span>Nosotros</span>
-        <span>Servicios</span>
-        <span>Reseñas</span>
-        <span>Contacto</span>
+        <div className="boton-close" onClick={toggleMenu}>
+          <img src= {isOpen ? close : menu} alt="" />
+        </div>
+        <span>
+          <img src={inicio} alt="" />
+          Inicio
+        </span>
+        <span>
+          <img src={nosotros} alt="" />
+          Nosotros
+        </span>
+        <span>
+          <img src={servicios} alt="" />
+          Servicios
+        </span>
+        <span>
+          <img src={resenas} alt="" />
+          Reseñas
+        </span>
+        <span>
+          <img src={contactos} alt="" />
+          Contacto
+        </span>
       </div>
     </header>
   );
