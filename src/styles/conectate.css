@@ -14,22 +14,23 @@
   margin: 0 auto;
   padding: 8rem 1rem;
 }
-.titulo-principal{
+.titulo-principal .text-left{
+  text-align: center;
+  line-height: 3rem;
   font-size: 1.875rem; /* 3xl */
   font-weight: 800;
   color: white;
 }
-.titulo-principal span{
-  display: block;
-  font-weight: 800;
+.titulo-principal .Domina-Nuevas{
   color: #1d4ed8;
 }
 .descripcion{
-  margin-top: 1rem;
-  max-width: 32rem;
   color: white;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  max-width: 32rem;
+  margin-top: 1rem;
+}
+.descripcion .text-3xl{
+  font-size: 1.45rem;
 }
 .button-container{
   margin-top: 2rem;
@@ -91,8 +92,16 @@
   .text-container{
     text-align: left;
   }
-  .titulo-principal {
+  .titulo-principal .text-left{
+    text-align: left;
+    line-height: normal;
     font-size: 3rem; /* 5xl */
+  }
+  .titulo-principal .Domina-Nuevas{
+    color: #1d4ed8;
+  }
+  .descripcion{
+    text-align: left;
   }
   .contactanos, .empieza-ahora{
     width: auto;
