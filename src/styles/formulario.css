@@ -1,0 +1,97 @@
+.formulario-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+   
+    
+    
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+    z-index: -1; /* Mueve el video al fondo */
+    
+  }
+  .Cuadro{
+    
+    position: relative;
+    z-index: 1; /* Coloca el contenido encima del video */
+    background-color: #ffffff; /* Un fondo blanco translúcido para el formulario */
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: 100px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  .formulario-container h2 {
+    font-size: 3rem;
+    color: #007bff; /* Azul suave */
+    margin-bottom: 1.5rem;
+    margin: 50px auto;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .form-row input,
+  .form-row textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .form-row input:focus,
+  .form-row textarea:focus {
+    border-color: #007acc;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 1rem ;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005fa3;
+  }
+  
+ 
+  

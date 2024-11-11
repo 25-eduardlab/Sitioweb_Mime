@@ -1,0 +1,38 @@
+.proyectos-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff; /* Fondo blanco */
+  }
+  
+  .proyectos-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .proyectos-container .highlight {
+    color: #00aaff; /* Color azul para "Nuestros" */
+  }
+  
+  .proyectos-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Dos columnas: una más grande */
+    grid-template-rows: 1fr 1fr; /* Dos filas */
+    gap: 2rem; /* Espacio entre los recuadros */
+  }
+  
+  .proyecto-item {
+    border: 1px solid #000;
+    overflow: hidden;
+  }
+  
+  .proyecto-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* La imagen se ajusta sin distorsión */
+  }
+  
+  .proyecto-grande {
+    grid-row: 1 / span 2; /* Ocupa las dos filas verticalmente */
+  }
+  

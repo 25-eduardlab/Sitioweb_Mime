@@ -3,112 +3,25 @@
   font-family: nazation;
   src: url("../fonts/nasalization-rg.otf"); /*Nueva tipografia*/
 }
-@media only screen and (max-width:765px) {
-  .header-container {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin:0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 6.5rem;
-    position: fixed;
-    z-index: 1;
-    transition: all 0.2s ease;
-  }
-  .logomovi{
-    width: 10rem;
-    height: 4rem;
-  }
-  .header-right{
-    position: absolute;
-    top: 100%;
-    left: -100%;
-    width: 100%;
-    padding: 1rem 4%;
-    background-color: #000;
-    color: #fff;
-    font-weight: 500;
-    font-family: "Lucida Sans";
-  }
-  .boton-menu{
-    margin-right: 4%;
-  }
-  .boton-menu img{
-    display: block;
-    width: 40px;
-    cursor: pointer;
-  }
-  .header-right span{
-    display: block;
-    font-size: 1rem;
-    margin: 5px 0;
-  }
-  .menu{
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    text-align: left;
-  }
-  .menu.active{
-    display: flex;
-  }
-}
-@media only screen and (min-width: 765px) {
   /*Modificacion del contenedor de la cabezere*/
 .header-container {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
     padding: 0 20px;
-    margin:0;
     top: 0;
     left: 0;
-    width: 100%;
     height: 6.5rem;
-    position: fixed;
-    z-index: 1;
+    z-index: 10;
     transition: all 0.2s ease;
   }
-.boton-menu{
+.boton-menu, .boton-close, .svg{
   display: none;
 }
-/*Se modifica el tomaño de la cabezera cuando baja 40px con el mause*/
-.header-container.scrolled {
-  background-color: #0000008f;
-  height: 5rem;
-  backdrop-filter: blur(15px);
-}
-
-/*cambio de color cuando se pasa el cursor*/
-.header-container:hover{
-  background-color: #000;
-}
-
-.logomovi{
-  width: 10rem;
-  height: 4rem;
-  transition: all 0.3s ease;
-}
-
-/*Se diminuye el tamaño de la imagen junto a la cabezera*/
-.logomovi.logoscrull {
-  width: 8.5rem;
-  height: 3.5rem;
-}
 .header-right {
-  display: flex;
   gap: 20px;
   color: #fff;
-  padding-right: 30px;
+  padding-right: 2%;
 }
 
-.header-right span{
-  cursor: pointer;
+.header-right a{
   margin: 0 7px;
   font-size: 1.1rem;
   color: #eee;
@@ -117,13 +30,14 @@
   position: relative;
   transition-duration: 400ms;
   transition-property: color;
+  text-decoration: none;
 }
-.header-right span:focus:after,
-.header-right span:hover:after {
+.header-right a:focus:after,
+.header-right a:hover:after {
   width: 100%;
   left: 0%;
 }
-.header-right span:after {
+.header-right a:after {
   content: "";
   pointer-events: none;
   bottom: -2px;
@@ -135,5 +49,80 @@
   transition-duration: 400ms;
   transition-property: width, left;
 }
-}
 
+@media only screen and (max-width:765px) {
+  .header-container {
+    transition: 0.3s;
+    z-index: 2;
+  }
+  .boton-menu, .boton-close, .svg{
+    display: flex;
+  }
+  .fondo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    backdrop-filter: blur(12px);
+  }
+  .header-right{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.2s;
+    overflow: hidden;
+    background-color: #0f172a;
+    border-radius: 10px 0 0 10px;
+    padding: 1rem 0;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 3;
+  }
+  .menu.active{
+    width: 280px;
+    overflow-y: auto;
+  }
+  .boton-menu{
+    margin-right: 4%;
+  }
+  .boton-close{
+    margin: 4%;
+    margin-bottom: 25px;
+    color: #fff;
+    transition: 0.3s;
+  }
+  .boton-close:hover{
+    color: red;
+    transform: translate(1px, -1px)
+  }
+  .header-right a{
+    display: flex;
+    font-size: 1.2rem;
+    padding: 3px 10px;
+    margin: 0 25px 20px;
+    color: #7e8590;;
+    align-items:center;
+    text-align: left;
+    font-weight: 100;
+    width:80%;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  .header-right a:hover{
+    background-color: #5353ff;
+    color: #fff;
+    transform: translate(1px, -1px)
+  }
+  a .svg{
+    margin-right: 10px;
+  }
+  .header-right a:focus:after,
+  .header-right a:after,
+  .header-right a:hover:after {
+  display: none;
+  }
+}

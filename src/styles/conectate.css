@@ -1,0 +1,115 @@
+.conectate-container{
+  background-image: url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+  margin-top: 60px;
+}
+.fondo-nigth{
+  background-color: rgba(31, 41, 55, 0.75); /* gris oscuro con opacidad */
+}
+.text-container{
+  width: 100%;
+  text-align: center;
+}
+.main-content{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 8rem 1rem;
+}
+.titulo-principal .text-left{
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.875rem; /* 3xl */
+  font-weight: 800;
+  color: white;
+}
+.titulo-principal .Domina-Nuevas{
+  color: #1d4ed8;
+}
+.descripcion{
+  color: white;
+  max-width: 32rem;
+  margin-top: 1rem;
+}
+.descripcion .text-3xl{
+  font-size: 1.45rem;
+}
+.button-container{
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: left;
+}
+.contactanos {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: #fff; /* rosa */
+  padding: 0.75rem 3rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.contactanos:hover {
+  color: #fff;
+  background-color: #1d4ed8; /* tono más oscuro */
+}
+
+.empieza-ahora {
+  display: block;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  padding: 0.75rem 3rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #fff; /* rosa */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.empieza-ahora:hover {
+  color: #3166f8; /* tono azul */
+  background-color:#0b193b;
+  border: 1px solid #0b193b;
+}
+
+@media (min-width: 640px) {
+  .fondo-nigth {
+      background: linear-gradient(
+          to right,
+          rgba(31, 41, 55, 0.95),
+          rgba(31, 41, 55, 0.25)
+      );
+  }
+  .main-content{
+    padding: 8rem 1.5rem;
+  }
+  .text-container{
+    text-align: left;
+  }
+  .titulo-principal .text-left{
+    text-align: left;
+    line-height: normal;
+    font-size: 3rem; /* 5xl */
+  }
+  .titulo-principal .Domina-Nuevas{
+    color: #1d4ed8;
+  }
+  .descripcion{
+    text-align: left;
+  }
+  .contactanos, .empieza-ahora{
+    width: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .main-content {
+      height: 100vh;
+      padding: 8rem 2rem;
+  }
+}
