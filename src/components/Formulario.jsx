@@ -4,7 +4,7 @@ import Video1 from '../video/Oscuro.mp4'
 
 const Formulario = () => {
   return (
-    <div className="formulario-container" id='Seccion-Contacto'>
+    <div className="formulario-container">
       <video autoPlay loop muted className="video-background"  width="1920" height="1080">
         <source src={Video1} type="video/mp4"/>
       </video>
