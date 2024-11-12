@@ -1,65 +1,126 @@
+/* Estilos para la sección de información de MIME */
+.texto-mimeinfo {
+  display: flex;
+  align-items: center; 
+  margin: 0 4% 50px;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
-/*Estilos para la seccion de informacion de MIME*/
-.content-container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 4%;
-    margin-top: 6rem;
-    height: auto;
+.sub-info {
+  font-family: 'Roboto', sans-serif;
+  width: 50%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.parrafo1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: justify;
+  margin-bottom: 0;
+  letter-spacing: 0.3px;
+}
+
+.sub-titulo {
+  display: flex;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.parrafo2, .parrafo3 {
+  margin-top: 0;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.parrafo2 {
+  color: #3dbaec;
+  margin-right: 10px;
+}
+
+.parrafo4 {
+  font-size: 30px;
+  text-align: justify;
+  margin-top: 0;
+  font-family: 'Calibri Light', sans-serif;
+  letter-spacing: 0.3px;
+}
+
+/* Estilo para la imagen con animación */
+.imagen-mimeinfo {
+  width: 40%; /* Imagen grande en pantallas grandes */
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.imagen-mimeinfo img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  animation: tocar 2s ease-in-out infinite;
+}
+
+@keyframes tocar {
+  0%, 100% {
+    transform: translateY(0);
   }
-  
-.texto-mimeinfo{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px 0 150px 0;
-    justify-content: center;
-    
-    }
-  .sub-info{
-    flex: 1 1 50%;
-    padding: 0 4 0 4 rem;
-    font-family: Calibri;
-    margin-top: 13rem;
-    
-    }
-  .parrafo1{
-    font-size: clamp(2rem, 5vw, 3rem);
-    text-align: justify;
-    margin-bottom: 0;
-    }
-  .sub-titulo{
-    display: flex;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    text-align: justify;
-    font-weight: 800;
-    }
-  .parrafo2{
-    color: #007bff ;
-    margin-top: 0;
-    margin-right: 1 rem;
-    }
-  .parrafo3{
-    margin-top: 0;
-    }
-  .parrafo4{
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    text-align: left;
-    margin-top: 0;
-    
-    }
+  50% {
+    transform: translateY(-5px);
+  }
+}
 
-  .imagen-mimeinfo  {
-        flex: 1 1 40%;
-        display: flex;
-        justify-content: center;
-        margin-top: 40px;
-      }
-    
-  .imagen-mimeinfo img {
-        
-      width: 100%;
-      height: auto;
-      max-width: 100%;
-      max-height: 900px;
-      
-      }
+/* Consultas de medios para responsividad */
+@media (max-width: 1024px) {
+  .sub-info {
+    width: 70%;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .imagen-mimeinfo {
+    width: 35%; /* Imagen más pequeña en pantallas más pequeñas */
+    margin-left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .parrafo1, .sub-titulo, .parrafo2, .parrafo3, .parrafo4 {
+    font-size: 5vw; /* Tamaño de texto mayor en móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  .texto-mimeinfo {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2% 30px;
+  }
+
+  .sub-info {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .imagen-mimeinfo {
+    width: 50%; /* Imagen más pequeña en pantallas pequeñas */
+    margin-left: 0;
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .parrafo1, .sub-titulo, .parrafo2, .parrafo3, .parrafo4 {
+    font-size: 6vw; /* Texto más grande en dispositivos pequeños */
+  }
+}
