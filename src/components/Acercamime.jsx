@@ -4,7 +4,7 @@ import Image7 from '../img/Dedos.png';
 
 const Acercamime = () => {
     return (
-        <div className="content-container">
+        <div className="content-container" id="Seccion-Nosotros">
             {/* Sección Acerca de MIME */}
             <section className="informacion-mime">
                 <div className="texto-mimeinfo">
