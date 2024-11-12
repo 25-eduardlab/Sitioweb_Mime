@@ -2,131 +2,125 @@
 .texto-mimeinfo {
   display: flex;
   align-items: center; 
-  margin: 0 4% 150px; /* Combina márgenes */
+  margin: 0 4% 50px;
   width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .sub-info {
-  font-family: 'Roboto', sans-serif; /* Cambiado a Roboto */
-  width: 50%; /* Ajustar ancho para dar espacio a la imagen */
+  font-family: 'Roboto', sans-serif;
+  width: 50%;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .parrafo1 {
-  font-family: 'Roboto', sans-serif; /* Cambiado a Roboto */
-  font-size: 70px; /* Tamaño para Acerca de */
-  font-weight: 700; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
   text-align: justify;
   margin-bottom: 0;
+  letter-spacing: 0.3px;
 }
 
 .sub-titulo {
   display: flex;
-  font-size: 70px; /* Tamaño para MIME y Consultores */
-  font-family: 'Roboto', sans-serif; 
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.parrafo2, .parrafo3 {
+  margin-top: 0;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.3px;
 }
 
 .parrafo2 {
   color: #3dbaec;
-  margin-top: 0;
-  margin-right: 20px;
-  font-size: 70px;
-  font-family: 'Roboto', sans-serif; /* Cambiado a Roboto */
-}
-
-.parrafo3 {
-  margin-top: 0;
-  font-size: 70px; 
-  font-family: 'Roboto', sans-serif; /* Cambiado a Roboto */
+  margin-right: 10px;
 }
 
 .parrafo4 {
-  font-size: 40px; 
+  font-size: 30px;
   text-align: justify;
   margin-top: 0;
-  font-family: 'Calibri Light', sans-serif; /* Cambiado a Calibri Light */
+  font-family: 'Calibri Light', sans-serif;
+  letter-spacing: 0.3px;
 }
 
 /* Estilo para la imagen con animación */
 .imagen-mimeinfo {
-  width: 30%; /* Ajustar ancho para la imagen */
-  display: flex; 
-  justify-content: flex-start; 
-  margin-left: 100px; /* Espacio entre texto e imagen */
+  width: 40%; /* Imagen grande en pantallas grandes */
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .imagen-mimeinfo img {
-  width: 100%; 
-  height: auto; 
-  max-width: 100%; 
-  animation: tocar 2s ease-in-out infinite; 
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  animation: tocar 2s ease-in-out infinite;
 }
 
 @keyframes tocar {
   0%, 100% {
-    transform: translateY(0); 
+    transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); 
+    transform: translateY(-5px);
   }
 }
 
 /* Consultas de medios para responsividad */
 @media (max-width: 1024px) {
-  .texto-mimeinfo {
-    flex-direction: row; /* Mantener en fila, pero con menos espacio */
-    align-items: center;
-  }
-
   .sub-info {
-    width: 60%; /* Aumentar ancho en pantallas más pequeñas */
+    width: 70%;
+    padding-right: 5px;
+    padding-left: 5px;
   }
 
   .imagen-mimeinfo {
-    width: 40%; /* Aumentar ancho para la imagen */
-    margin-left: 50px; /* Reducir margen para mantener la proximidad */
-  }
-}
-
-@media (max-width: 768px) {
-  .texto-mimeinfo {
-    flex-direction: row; /* Mantener en fila */
-  }
-
-  .sub-info {
-    width: 70%; /* Aumentar ancho en pantallas más pequeñas */
-  }
-
-  .imagen-mimeinfo {
-    width: 30%; /* Ajustar ancho para la imagen */
-    margin-left: 20px; /* Reducir margen */
+    width: 35%; /* Imagen más pequeña en pantallas más pequeñas */
+    margin-left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
 
   .parrafo1, .sub-titulo, .parrafo2, .parrafo3, .parrafo4 {
-    font-size: 5vw; /* Usar vw para tamaño responsivo */
-    min-font-size: 40px; /* Tamaño mínimo */
+    font-size: 5vw; /* Tamaño de texto mayor en móviles */
   }
 }
 
 @media (max-width: 480px) {
   .texto-mimeinfo {
-    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    flex-direction: column;
     align-items: center;
+    margin: 0 2% 30px;
   }
 
   .sub-info {
-    width: 100%; /* Ancho completo en pantallas pequeñas */
-    text-align: center; /* Centrar texto */
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .imagen-mimeinfo {
-    width: 100%; /* Ancho completo para la imagen */
-    margin-left: 0; /* Eliminar margen */
-    justify-content: center; /* Centrar la imagen */
+    width: 50%; /* Imagen más pequeña en pantallas pequeñas */
+    margin-left: 0;
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .parrafo1, .sub-titulo, .parrafo2, .parrafo3, .parrafo4 {
-    font-size: 5vw; /* Usar vw para tamaño responsivo */
-    min-font-size: 30px; /* Tamaño mínimo */
+    font-size: 6vw; /* Texto más grande en dispositivos pequeños */
   }
 }
