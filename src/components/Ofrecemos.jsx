@@ -34,7 +34,7 @@ const Ofrecemos = () => {
       <h2>Lo que ofrecemos</h2>
       <div className="cards">
         {services.map((service, index) => (
-          <div key={index} className="card">
+          <div key={index} className="card p-3">
             <div className="card-image">
               <img src={service.img} alt={service.title} />
               <div className="card-overlay">
