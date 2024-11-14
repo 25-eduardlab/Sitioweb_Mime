@@ -1,6 +1,8 @@
 import React from "react";
 import '../styles/acercamime.css';
 import Image7 from '../img/Dedos.png';
+import FlipText2 from "../components/magicui/flip-text2";
+import FlipText from "../components/magicui/flip-text"
 
 const Acercamime = () => {
     return (
@@ -9,13 +11,15 @@ const Acercamime = () => {
             <section className="informacion-mime">
                 <div className="texto-mimeinfo">
                     <div className="sub-info">
-                        <p className="parrafo1">Acerca de</p>
+                        <h1 className="parrafo1"><FlipText2 className="" word="Acerca de"/></h1>
                         <div className="sub-titulo">
-                            <p className="parrafo2">MIME</p>
-                            <p className="parrafo3">Consultores</p>
+                            <h2 className="parrafo2"><FlipText2 word="MIME"/></h2>
+                            <h2 className="parrafo3"><FlipText2 word="Consultores"/></h2>
                         </div>
                         <p className="parrafo4">
-                            En MIME buscamos empoderar a empresas mediante soluciones integrales de informática y electricidad, combinando innovación tecnológica y excelencia en el servicio para garantizar eficiencia, seguridad y sostenibilidad en cada proyecto.
+                        <FlipText className="text-4xl"
+                            word="En MIME buscamos empoderar a empresas mediante soluciones integrales de informática y electricidad, combinando innovación tecnológica y excelencia en el servicio para garantizar eficiencia, seguridad y sostenibilidad en cada proyecto."
+                            />
                         </p>
                     </div>
                     <div className="imagen-mimeinfo">

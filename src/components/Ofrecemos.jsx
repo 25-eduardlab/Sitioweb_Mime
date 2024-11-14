@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/ofrecemos.css';
+import SparklesText from "../components/magicui/sparkles-text";
+import BlurIn from "../components/magicui/blur-in";
 import AI1  from'../img/Servicios.jpg'
 import AI2  from'../img/infraestructura.jpeg'
 import AI3  from'../img/Aplicaciones.jpg'
@@ -37,9 +39,13 @@ const Ofrecemos = () => {
           <div key={index} className="card">
             <div className="card-image">
               <img src={service.img} alt={service.title} />
-              <div className="card-overlay">
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
+              <div className="card-overlay cursor-pointer">
+                <BlurIn className="w-full h-full">
+                  <div className='justify-items-center'>
+                    <SparklesText text={service.title} className='titulo-services my-10'/>
+                    <p>{service.description}</p>
+                  </div>
+                </BlurIn>
               </div>
             </div>
           </div>
