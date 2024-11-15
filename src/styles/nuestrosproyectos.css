@@ -34,7 +34,7 @@ h2 {
 }
 
 h2 .highlight {
-  color: #ff5733; /* Color de resaltar */
+  color:blue; /* Color de resaltar */
   font-weight: bold; /* Si deseas que solo la parte resaltada esté en negrita, puedes usarlo aquí también */
 }
 
@@ -73,10 +73,12 @@ h2 .highlight {
 }
 
 .slider img {
+  position: relative;
   width: 100%;  /* Hace que las imágenes ocupen todo el ancho del contenedor */
-  height: 100%;  /* Hace que las imágenes ocupen toda la altura del contenedor */
+  height: 450px;  /* Hace que las imágenes ocupen toda la altura del contenedor */
   object-fit: cover;  /* Hace que las imágenes cubran completamente el área sin distorsión */
   border-radius: 10px;
+  overflow: hidden
 }
 
 /* Controles de navegación (ocultos pero funcionales) */

@@ -57,6 +57,7 @@ const NuestrosProyectos = () => {
           {/* Slider solo para la primera imagen */}
           <div className="slider-container">
             <div className="slider">
+            
               <img src={sliderImages[currentIndex]} alt={`Proyecto ${currentIndex + 1}`} />
             </div>
 
