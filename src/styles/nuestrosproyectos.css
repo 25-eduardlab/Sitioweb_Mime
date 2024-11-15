@@ -1,38 +1,115 @@
+/* Estilo general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor de proyectos */
 .proyectos-container {
-    text-align: center;
-    padding: 2rem;
-    background-color: #fff; /* Fondo blanco */
-  }
-  
-  .proyectos-container h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-  }
-  
-  .proyectos-container .highlight {
-    color: #00aaff; /* Color azul para "Nuestros" */
-  }
-  
-  .proyectos-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* Dos columnas: una más grande */
-    grid-template-rows: 1fr 1fr; /* Dos filas */
-    gap: 2rem; /* Espacio entre los recuadros */
-  }
-  
-  .proyecto-item {
-    border: 1px solid #000;
-    overflow: hidden;
-  }
-  
-  .proyecto-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* La imagen se ajusta sin distorsión */
-  }
-  
-  .proyecto-grande {
-    grid-row: 1 / span 2; /* Ocupa las dos filas verticalmente */
-  }
-  
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.proyectos-container h2{
+  width: 100%;
+  font-size: 40px;
+}
+
+/* Título "Nuestros proyectos" */
+h2 {
+  font-size: 50px; /* Establecer el tamaño de la fuente a 50px */
+  font-weight: bold; /* Esto hace que todo el título esté en negrita */
+  margin-bottom: 20px;
+}
+
+h2 .highlight {
+  color: #ff5733; /* Color de resaltar */
+  font-weight: bold; /* Si deseas que solo la parte resaltada esté en negrita, puedes usarlo aquí también */
+}
+
+/* Grid para organizar el slider y las imágenes estáticas */
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: 65% 35%; /* El slider ocupa el 65% y las imágenes estáticas el 35% */
+  gap: 40px;
+  width: 100%;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Slider */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 500px;  /* Ajusta la altura que desees para el slider */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;  /* Hace que las imágenes ocupen todo el ancho del contenedor */
+  height: 100%;  /* Hace que las imágenes ocupen toda la altura del contenedor */
+  object-fit: cover;  /* Hace que las imágenes cubran completamente el área sin distorsión */
+  border-radius: 10px;
+}
+
+/* Controles de navegación (ocultos pero funcionales) */
+button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  opacity: 0; /* Los hace invisibles */
+  pointer-events: none; /* Desactiva la interacción con el botón (no interactúa con el ratón) */
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Estilo para las imágenes estáticas */
+.proyecto-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
