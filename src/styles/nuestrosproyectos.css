@@ -1,4 +1,3 @@
-/* Estilo general */
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +10,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
-/* Contenedor de proyectos */
 .proyectos-container {
   width: 100%;
   max-width: 1200px;
@@ -26,22 +24,21 @@ body {
   font-size: 40px;
 }
 
-/* Título "Nuestros proyectos" */
 h2 {
-  font-size: 50px; /* Establecer el tamaño de la fuente a 50px */
-  font-weight: bold; /* Esto hace que todo el título esté en negrita */
+  font-size: 50px; 
+  font-weight: bold; 
   margin-bottom: 20px;
 }
 
 h2 .highlight {
-  color:blue; /* Color de resaltar */
-  font-weight: bold; /* Si deseas que solo la parte resaltada esté en negrita, puedes usarlo aquí también */
+  color:blue; 
+  font-weight: bold; 
 }
 
-/* Grid para organizar el slider y las imágenes estáticas */
+
 .proyectos-grid {
   display: grid;
-  grid-template-columns: 65% 35%; /* El slider ocupa el 65% y las imágenes estáticas el 35% */
+  grid-template-columns: 65% 35%; 
   gap: 40px;
   width: 100%;
 }
@@ -58,11 +55,10 @@ h2 .highlight {
   gap: 20px;
 }
 
-/* Slider */
 .slider-container {
   position: relative;
   width: 100%;
-  height: 500px;  /* Ajusta la altura que desees para el slider */
+  height: 500px;  
   overflow: hidden;
   border-radius: 10px;
 }
@@ -74,14 +70,13 @@ h2 .highlight {
 
 .slider img {
   position: relative;
-  width: 100%;  /* Hace que las imágenes ocupen todo el ancho del contenedor */
-  height: 450px;  /* Hace que las imágenes ocupen toda la altura del contenedor */
-  object-fit: cover;  /* Hace que las imágenes cubran completamente el área sin distorsión */
+  width: 100%;  
+  height: 450px;  
+  object-fit: cover;  
   border-radius: 10px;
   overflow: hidden
 }
 
-/* Controles de navegación (ocultos pero funcionales) */
 button {
   position: absolute;
   top: 50%;
@@ -93,8 +88,8 @@ button {
   font-size: 18px;
   border-radius: 50%;
   transform: translateY(-50%);
-  opacity: 0; /* Los hace invisibles */
-  pointer-events: none; /* Desactiva la interacción con el botón (no interactúa con el ratón) */
+  opacity: 0; 
+  pointer-events: none; 
 }
 
 button:hover {
@@ -108,8 +103,6 @@ button:hover {
 .next {
   right: 10px;
 }
-
-/* Estilo para las imágenes estáticas */
 .proyecto-item img {
   width: 100%;
   height: 100%;
