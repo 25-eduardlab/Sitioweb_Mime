@@ -4,7 +4,7 @@
 }
 
 .colaboraciones-container h2 {
-  background-image: linear-gradient(to top left, #162b63, #3b82f6, #172554);
+  background-image: linear-gradient(to top left, #162b63, #FBFBFB, #172554);
   background-clip: text;
   background-size: 200%;
   -webkit-background-clip: text;
@@ -27,8 +27,8 @@
 }
 .logo {
   position: relative;
-  width: 180px;  /* Tamaño fijo en ancho */
-  height: 80px;  /* Tamaño fijo en altura */
+  width: 420px;  /* Tamaño fijo en ancho */
+  height: 220px;  /* Tamaño fijo en altura */
   object-fit: contain; /* Mantiene las proporciones del logo */
   transition: transform 0.3s ease;
 }
@@ -43,14 +43,13 @@
 }
 
 .left,.rigth{
-  background-image: linear-gradient(#1e40af, #1d4ed8,#2563eb);
+  color: #fff;
   border-radius: 50%;
 }
 
 .left:hover,
 .rigth:hover{
   transform: scale(1.25);
-  filter: drop-shadow(0 0 6px rgba(123, 136, 255, 0.8));
 }
 
 @keyframes mover-gradiente {

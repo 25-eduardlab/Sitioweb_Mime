@@ -67,7 +67,7 @@ useEffect(() => {
 
 
   return (
-    <div className="testimonios-container">
+    <div className="testimonios-container" id='Seccion-Reseñas'>
       <h2>
         <span className="highlight">Testimonios</span> Inspiradores
       </h2>

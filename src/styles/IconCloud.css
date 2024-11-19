@@ -1,0 +1,38 @@
+.icon-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    perspective: 1000px;
+    animation: rotateCloud 20s infinite linear;
+  }
+  
+  .icon-item {
+    font-size: 2rem;
+    color: #666;
+    position: absolute;
+    transform-origin: 100px 100px 100px;
+  }
+  
+  .icon-item:nth-child(1) { transform: rotateY(0deg) translateZ(100px); }
+  .icon-item:nth-child(2) { transform: rotateY(30deg) translateZ(100px); }
+  .icon-item:nth-child(3) { transform: rotateY(60deg) translateZ(100px); }
+  .icon-item:nth-child(4) { transform: rotateY(90deg) translateZ(100px); }
+  .icon-item:nth-child(5) { transform: rotateY(120deg) translateZ(100px); }
+  .icon-item:nth-child(6) { transform: rotateY(150deg) translateZ(100px); }
+  .icon-item:nth-child(7) { transform: rotateY(180deg) translateZ(100px); }
+  .icon-item:nth-child(8) { transform: rotateY(210deg) translateZ(100px); }
+  .icon-item:nth-child(9) { transform: rotateY(240deg) translateZ(100px); }
+  .icon-item:nth-child(10) { transform: rotateY(270deg) translateZ(100px); }
+  .icon-item:nth-child(11) { transform: rotateY(300deg) translateZ(100px); }
+  
+  @keyframes rotateCloud {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  

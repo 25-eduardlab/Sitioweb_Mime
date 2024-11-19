@@ -24,7 +24,7 @@ const PageFooter = () => {
         }
     ];
     return (
-        <footer className="bg-black mt-10">
+        <footer className="bg-black">
             <div className="content-footer m-auto">
                 <div className="content-logos-footer flex justify-between ">
                     <div className="mime-logo">

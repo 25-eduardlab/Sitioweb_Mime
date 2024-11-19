@@ -5,8 +5,10 @@
 }
 
 .cards {
+  margin: auto; /*Para que este en el centro*/
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Dos columnas por defecto */
+  max-width: 1200px; /* maximo de tamaño que tendra*/
   gap: 5rem; /* Espacio entre las tarjetas */
   justify-content: center;
 }

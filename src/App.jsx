@@ -11,6 +11,9 @@ import Testimonios from './components/Testimonios';
 import NuestrosProyectos from './components/Nuestrosproyectos';
 import Formulario from './components/Formulario';
 
+
+
+
 const App = () => {
 
 
@@ -24,7 +27,7 @@ const App = () => {
       <Ofrecemos />
       <Testimonios />
       <NuestrosProyectos />
-      <Formulario />
+      <Formulario/>
       <PageFooter />
       {/* Aquí puedes agregar más componentes */}
     </>

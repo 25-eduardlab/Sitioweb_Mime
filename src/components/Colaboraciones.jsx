@@ -1,10 +1,20 @@
 import React, { useRef, useState, useEffect } from 'react';
 import '../styles/colaboraciones.css';
-import cisco from '../svg/cisco.svg';
-import intel from '../svg/intel.svg';
-import lenovo from '../svg/lenovo.svg';
-import microsoft from '../svg/microsoft.svg';
-import ruckus from '../svg/ruckus.svg';
+import cisco from '../img/Cisco.png';
+import intel from '../img/Intel.png';
+import lenovo from '../img/Lenovo.png';
+import microsoft from '../img/Microfost1.png';
+import Brother from '../img/Brother.png';
+import CambiumNetworks from '../img/CambiumNetworks.png';
+import Dell from '../img/dell.png';
+import Epson from '../img/Epson.png';
+import LG from '../img/LG.png';
+import Samsung from '../img/Samsung.png';
+import TPLink from '../img/TPLink.png';
+import Ubiquiti from '../img/Ubiquiti.png';
+import WesterDigital from '../img/WesternDigital.png';
+import Zebra from '../img/Zebra.png';
+import Hp from '../img/HPP.png';
 import { GoArrowDownRight } from "react-icons/go";
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
@@ -15,56 +25,69 @@ const Colaboraciones = () => {
     { src: intel, alt: 'Intel' },
     { src: lenovo, alt: 'Lenovo' },
     { src: microsoft, alt: 'Microsoft' },
-    { src: ruckus, alt: 'Ruckus' },
+    { src: Brother, alt: 'Brother' }, // Reemplaza con las rutas reales de tus imágenes
+    { src: CambiumNetworks, alt: 'CambiumNetworks'},
+    { src: Dell, alt: 'Dell' },
+    { src: Epson, alt: 'Epson' },
+    { src: LG, alt: 'LG' }, // Reemplaza con las rutas reales de tus imágenes
+    { src: Samsung, alt: 'Samsung' },
+    { src: TPLink, alt: 'TPLink' },
+    { src: Ubiquiti, alt: 'Ubiquiti' },
+    { src: WesterDigital, alt: 'WesterDigital' }, // Reemplaza con las rutas reales de tus imágenes
+    { src: Zebra, alt: 'Zebra' },
+    { src: Hp, alt: 'HP' },
   ];
 
-  const carruselRef = useRef(null);
+  const carouselRef = useRef(null);
+  const intervalRef = useRef(null);
   const step = 1;
-  let intervalo = useRef(null);
 
   useEffect(() => {
-    const carrusel = carruselRef.current;
+    const carousel = carouselRef.current;
 
-    const duplicarContenido = () => {
-      carrusel.innerHTML += carrusel.innerHTML;
+    const duplicateContent = () => {
+      carousel.innerHTML += carousel.innerHTML;
     };
 
-    duplicarContenido();
+    duplicateContent();
 
-    const start = () => {
-      intervalo.current = setInterval(() => {
-        carrusel.scrollLeft += step;
-        if (carrusel.scrollLeft >= carrusel.scrollWidth / 2 ) {
-          carrusel.scrollLeft = 0;
+    carousel.scrollLeft = carousel.scrollWidth / 2;
+
+    const startCarousel = () => {
+      intervalRef.current = setInterval(() => {
+        carousel.scrollLeft -= step;
+
+        if (carousel.scrollLeft <= 0) {
+          carousel.scrollLeft = carousel.scrollWidth / 2;
         }
       }, 25);
     };
 
-    const stop = () => {
-      clearInterval(intervalo.current);
+    const stopCarousel = () => {
+      clearInterval(intervalRef.current);
     };
 
-    carrusel.addEventListener("mouseover", stop);
-    carrusel.addEventListener("mouseout", start);
+    carousel.addEventListener('mouseover', stopCarousel);
+    carousel.addEventListener('mouseout', startCarousel);
 
-    start();
+    startCarousel();
 
     return () => {
-      stop();
-      carrusel.removeEventListener("mouseover", stop);
-      carrusel.removeEventListener("mouseout", start);
+      stopCarousel();
+      carousel.removeEventListener('mouseover', stopCarousel);
+      carousel.removeEventListener('mouseout', startCarousel);
     };
   }, []);
 
   const scrollLeft = () => {
-    const carrusel = carruselRef.current;
+    const carrusel = carouselRef.current;
     carrusel.scrollLeft -= carrusel.offsetWidth / 4;
 
 
   };
   
   const scrollRight = () => {
-    const carrusel = carruselRef.current;
+    const carrusel = carouselRef.current;
     carrusel.scrollLeft += carrusel.offsetWidth / 4;
   };
 
@@ -78,7 +101,7 @@ const Colaboraciones = () => {
         <div className="left cursor-pointer transition " >
           <FaAngleLeft size = "4.5rem" onClick={scrollLeft}/>
         </div>
-        <div className="carrusel-items flex" ref={carruselRef}>
+        <div className="carrusel-items flex" ref={carouselRef}>
           {logos.map((logo, index) => (
           <img key={index} src={logo.src} alt={logo.alt} className="logo cursor-pointer" />
         ))}

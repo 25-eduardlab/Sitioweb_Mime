@@ -30,7 +30,7 @@ const Ofrecemos = () => {
   ];
 
   return (
-    <div className="ofrecemos-container">
+    <div className="ofrecemos-container" id='Seccion-Servicios'>
       <h2>Lo que ofrecemos</h2>
       <div className="cards">
         {services.map((service, index) => (

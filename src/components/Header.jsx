@@ -18,18 +18,34 @@ const Header = () => {
   }
 
   const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    if (isOpen){
-      document.body.style.overflow = "hidden";
-    }else{
-      document.body.style.overflow = "auto";
-    }
-    return() =>{
-      document.body.style.overflow = "auto";
-    }
-  }, [isOpen]);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) {
+      if (isOpen) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen, isMobile]);
+
+
+  //Esto es para que la cabezera disminuya se tamaña pero como no se usa lo
+  //pongo como comentario
+  
+  /*useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 40) {
         setScrolled(true);  
@@ -41,12 +57,12 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll); 
     };
-  }, []);
+  }, []);*/
 
   return (
-    <header className={`header-container bg-black flex items-center justify-between w-full fixed ${scrolled ? "scrolled" : ""}`}>
+    <header className="header-container bg-black flex items-center justify-between w-full fixed">
       <div className="header-left">
-        <img src={logo} alt="Logo" className={`logomovi w-40 h-16 ${scrolled ? "logoscrull" : ""}`}/>
+        <img src={logo} alt="Logo" className="logomovi w-40 h-16 "/>
       </div>
       <IoMdMenu size="3rem" className="boton-menu cursor-pointer" onClick={toggleMenu} color="#fff"/>
       {isOpen && <div className="fondo"></div>}
@@ -54,11 +70,11 @@ const Header = () => {
         <div className="boton-close w-fit cursor-pointer">
           <IoMdClose size="3rem" onClick={toggleMenu}/>
         </div>
-        <a href="#"><IoMdHome size= "2rem" className="svg"/>Inicio</a>
-        <a href="#"><FaUsers size= "2rem" className="svg"/>Nosotros</a>
-        <a href="#"><MdDesignServices size= "2rem" className="svg"/>Servicios</a>
-        <a href="#"><MdOutlineReviews size= "2rem" className="svg"/>Reseñas</a>
-        <a href="#"><MdOutlineContacts size="2rem" className="svg"/>Contacto</a>
+        <a href="#Seccion-Inicio" onClick={toggleMenu}><IoMdHome size= "2rem" className="svg"/>Inicio</a>
+        <a href="#Seccion-Nosotros" onClick={toggleMenu}><FaUsers size= "2rem" className="svg" />Nosotros</a>
+        <a href="#Seccion-Servicios" onClick={toggleMenu}><MdDesignServices size= "2rem" className="svg"/>Servicios</a>
+        <a href="#Seccion-Reseñas" onClick={toggleMenu}><MdOutlineReviews size= "2rem" className="svg"/>Reseñas</a>
+        <a href="#Seccion-Contacto" onClick={toggleMenu}><MdOutlineContacts size="2rem" className="svg"/>Contacto</a>
       </div>
     </header>
   );
