@@ -100,10 +100,12 @@ const Ofrecemos = () => {
                 className="w-full h-full object-cover rounded-lg"
               />
               <div className="card-overlay">
-                <div className="space-y-4 text-center">
-                  <h3 className="text-2xl font-bold">{service.title}</h3>
-                  <p className="text-lg">{service.description}</p>
-                </div>
+              <BlurIn className="w-full h-full">
+                  <div className='justify-items-center'>
+                    <SparklesText text={service.title} className='titulo-services my-10'/>
+                    <p>{service.description}</p>
+                  </div>
+                </BlurIn>
               </div>
             </div>
           </div>
