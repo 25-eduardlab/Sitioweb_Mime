@@ -1,3 +1,8 @@
+.Columna-1{
+  padding-left: 5rem;
+  margin: auto;
+}
+
 .text-contactos-form h1{
   font-size: 4rem;
   font-family: system-ui;
@@ -155,8 +160,23 @@
 
 @media (max-width: 768px){
   .text-content-form{
-    display:flex;
     flex-direction: column;
+    padding: 1rem;
   }
-  
+  .Columna-1{
+    padding: 0;
+  }
+  .text-contactos-form h1,
+  .text-contactos-form .text-parpadeo{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .text-contactos-form h2{
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .text-contactos-form h3, .flecha{
+    display: none;
+  }
 }

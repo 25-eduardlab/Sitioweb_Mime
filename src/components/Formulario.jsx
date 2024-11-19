@@ -13,18 +13,18 @@ const Formulario = () => {
     <div className="formulario-container relative py-10 overflow-hidden" id='seccion-formulario'>
       <Meteors number={60}/>
       <div className="text-content-form flex pb-10">
-        <div className="Columna-1 w-1/2 m-auto pl-20">
+        <div className="Columna-1 w-full md:w-1/2">
         <div className='text-contactos-form'>
           <h1>Conectate con <span className='text-parpadeo bg-black bg-clip-text'>Nosotros</span></h1>
           <h2>Impulsa tu proyecto con ideas innovadoras y tecnologicas</h2>
-          <div className="mt-10">
+          <div className="md:mt-10">
             <h3>Con tan solo un CLICK</h3>
             <div className="flecha bg-black bg-clip-text"></div>
           </div>
           
         </div>
       </div>
-      <div className="Columna-2 w-1/2">
+      <div className="Columna-2 w-full md:w-1/2">
         <div>
           <img src={imagen} alt="Imagen-chica" className='h-[420px] m-auto mt-10'/>
         </div>
