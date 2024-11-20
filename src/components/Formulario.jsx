@@ -37,7 +37,7 @@ const Formulario = () => {
           {(onClose) => (
             <>
               <ModalHeader className="flex text-sky-600 justify-center text-center text-4xl gap-1 font-bold">¡Estamos aquí para Ti!</ModalHeader>
-              <p className='text-slate-100 font-light text-center text-sm'>Este correo se enviara a: correo@gmail.com</p>
+              <p className='text-slate-100 font-light text-center text-sm'>Este Formulario se enviara a: correo@gmail.com</p>
               <ModalBody>
                 <div className="flex justify-center flex-wrap">
                   <input type="text" placeholder='Nombre' className='input w-full sm:w-5/12'/>
