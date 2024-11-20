@@ -1,10 +1,20 @@
 import React, { useRef, useState, useEffect } from 'react';
 import '../styles/colaboraciones.css';
-import cisco from '../svg/cisco.svg';
-import intel from '../svg/intel.svg';
-import lenovo from '../svg/lenovo.svg';
-import microsoft from '../svg/microsoft.svg';
-import ruckus from '../svg/ruckus.svg';
+import cisco from '../img/Ciscoo.png';
+import intel from '../img/Intell.png';
+import lenovo from '../img/Lenovo.png';
+import microsoft from '../img/Microfost1.png';
+import Brother from '../img/Brother.png';
+import CambiumNetworks from '../img/CambiumNetworks.png';
+import Dell from '../img/dell.png';
+import Epson from '../img/Epsonn.png';
+import LG from '../img/Lggg.png';
+import Samsung from '../img/Samsung.png';
+import TPLink from '../img/TPLink.png';
+import Ubiquiti from '../img/Ubiquiti.png';
+import WesterDigital from '../img/WesternDigital.png';
+import Zebra from '../img/Zebra.png';
+import Hp from '../img/HPP.png';
 import { GoArrowDownRight } from "react-icons/go";
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
@@ -15,7 +25,17 @@ const Colaboraciones = () => {
     { src: intel, alt: 'Intel' },
     { src: lenovo, alt: 'Lenovo' },
     { src: microsoft, alt: 'Microsoft' },
-    { src: ruckus, alt: 'Ruckus' },
+    { src: Brother, alt: 'Brother' }, // Reemplaza con las rutas reales de tus imágenes
+    { src: CambiumNetworks, alt: 'CambiumNetworks'},
+    { src: Dell, alt: 'Dell' },
+    { src: Epson, alt: 'Epson' },
+    { src: LG, alt: 'LG' }, // Reemplaza con las rutas reales de tus imágenes
+    { src: Samsung, alt: 'Samsung' },
+    { src: TPLink, alt: 'TPLink' },
+    { src: Ubiquiti, alt: 'Ubiquiti' },
+    { src: WesterDigital, alt: 'WesterDigital' }, // Reemplaza con las rutas reales de tus imágenes
+    { src: Zebra, alt: 'Zebra' },
+    { src: Hp, alt: 'HP' },
   ];
 
   const carouselRef = useRef(null);
