@@ -1,8 +1,9 @@
 import React,{useRef,useEffect,useState} from 'react';
 import '../styles/testimonios.css';
-import Gedecor from '../img/gedecord.png';
-import Multitest from '../img/Multitest.png';
-import Parga from '../img/parga.png';
+import Gedecor from '../img/Arum.jpg.png';
+import Multitest from '../img/Bc.jpg.png';
+import Parga from '../img/Multi.jpg.png';
+import Tambo from '../img/t.png';
 
 const Testimonios = () => {
   const logos = [
@@ -18,6 +19,11 @@ const Testimonios = () => {
     },
     {
       img: Parga, 
+      title: 'PARGA',
+      description: 'Operador Logístico',
+    },
+    {
+      img: Tambo, 
       title: 'PARGA',
       description: 'Operador Logístico',
     },

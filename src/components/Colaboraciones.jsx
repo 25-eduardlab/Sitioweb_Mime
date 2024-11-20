@@ -1,14 +1,14 @@
 import React, { useRef, useState, useEffect } from 'react';
 import '../styles/colaboraciones.css';
-import cisco from '../img/Cisco.png';
-import intel from '../img/Intel.png';
+import cisco from '../img/Ciscoo.png';
+import intel from '../img/Intell.png';
 import lenovo from '../img/Lenovo.png';
 import microsoft from '../img/Microfost1.png';
 import Brother from '../img/Brother.png';
 import CambiumNetworks from '../img/CambiumNetworks.png';
 import Dell from '../img/dell.png';
-import Epson from '../img/Epson.png';
-import LG from '../img/LG.png';
+import Epson from '../img/Epsonn.png';
+import LG from '../img/Lggg.png';
 import Samsung from '../img/Samsung.png';
 import TPLink from '../img/TPLink.png';
 import Ubiquiti from '../img/Ubiquiti.png';
