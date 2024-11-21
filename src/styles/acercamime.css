@@ -78,6 +78,23 @@
   }
 }
 
+/* Animación de parpadeo para los textos */
+@keyframes parpadeo {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.05);
+  }
+}
+
+/* Aplicación de la animación a las clases de texto */
+.parrafo1, .sub-titulo, .parrafo2, .parrafo3 {
+  animation: parpadeo 2s ease-in-out infinite;
+}
+
 /* Consultas de medios para responsividad */
 @media (max-width: 1024px) {
   .sub-info {

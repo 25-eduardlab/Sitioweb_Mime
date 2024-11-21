@@ -15,7 +15,7 @@ const Formulario = () => {
             <input type="text" placeholder="Nombre" required />
             <input type="text" placeholder="Apellido" required />
           </div>
-           <div className="form-row">
+          <div className="form-row">
             <input type="email" placeholder="Correo Electrónico" required />
             <input type="tel" placeholder="Teléfono" required />
           </div>
