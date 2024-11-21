@@ -1,38 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .proyectos-container {
-    text-align: center;
-    padding: 2rem;
-    background-color: #fff; /* Fondo blanco */
-  }
-  
-  .proyectos-container h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-  }
-  
-  .proyectos-container .highlight {
-    color: #00aaff; /* Color azul para "Nuestros" */
-  }
-  
-  .proyectos-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* Dos columnas: una más grande */
-    grid-template-rows: 1fr 1fr; /* Dos filas */
-    gap: 2rem; /* Espacio entre los recuadros */
-  }
-  
-  .proyecto-item {
-    border: 1px solid #000;
-    overflow: hidden;
-  }
-  
-  .proyecto-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* La imagen se ajusta sin distorsión */
-  }
-  
-  .proyecto-grande {
-    grid-row: 1 / span 2; /* Ocupa las dos filas verticalmente */
-  }
-  
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.proyectos-container h2{
+  width: 100%;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 50px; 
+  font-weight: bold; 
+  margin-bottom: 20px;
+}
+
+h2 .highlight {
+  color:blue; 
+  font-weight: bold; 
+}
+
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: 65% 35%; 
+  gap: 40px;
+  width: 100%;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 500px;  
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  position: relative;
+  width: 100%;  
+  height: 450px;  
+  object-fit: cover;  
+  border-radius: 10px;
+  overflow: hidden
+}
+
+.button-imagenes-pryects {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  opacity: 0; 
+  pointer-events: none; 
+}
+
+.button-imagenes-pryects:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+.proyecto-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}

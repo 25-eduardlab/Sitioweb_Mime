@@ -57,6 +57,46 @@ const Content = ( ) => {
         </div>
       </section>
 
+      <section className='section-tb1'>  
+    <h2>Lo que ofrecemos</h2>  
+    <div className='tb1'>   
+        <table className='img-tb1'>  
+            <tbody>  
+                <tr>  
+                    <td>  
+                        <div className='image-container'>  
+                            <img src="src/img/bosque.jpeg" alt="Imagen 1" className='imagen01'/>  
+                            <div className='image-caption'>Servicios TI</div>  
+                        </div>  
+                    </td>  
+                    <td>  
+                        <div className='image-container'>  
+                            <img src="src/img/bosque.jpeg" alt="Imagen 2" className='imagen02'/>  
+                            <div className='image-caption'>Infraestructura </div>  
+                        </div>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>  
+                        <div className='image-container'>  
+                            <img src="src/img/bosque.jpeg" alt="Imagen 3" className='imagen03' />  
+                            <div className='image-caption'>Aplicaciones TI</div>  
+                        </div>  
+                    </td>  
+                    <td>  
+                        <div className='image-container'>  
+                            <img src="src/img/bosque.jpeg" alt="Imagen 4" className='imagen04'/>  
+                            <div className='image-caption'>Distribución de Equipos</div>  
+                        </div>  
+                    </td>  
+                </tr>  
+            </tbody>  
+        </table>   
+    </div>  
+</section>      
+
+
+
       {/* Sección de Servicios */}
       <section className="services-section"> 
         <h2>Nuestros Servicios</h2>
@@ -82,19 +122,39 @@ const Content = ( ) => {
           </div>
         </div>
       </section>
-
-      <section className="Testimonio">
-        <div className='testimonio-div'><h2 className='Testimonio-style'>Testimonios </h2>
-          <h2 className='Testimonio2-style'>inspiradores </h2>
+      
+    <section className="image-gallery">
+        <h2>Galería de Imágenes</h2>
+        <div className="custom-gallery-grid">
+            <div className="main-image">
+                <img src={Image3} alt="Imagen 1" />
+                <div className="overlay-text">Haz clic para aprovechar al máximo esta idea con una cuenta gratuita</div>
+                <button className="cta-button">Más información</button>
+            </div>
+            
+            <div className="side-images">
+                <img src={Image5} alt="Imagen 2" />
+                <img src={Image6} alt="Imagen 3" />
+            </div>
         </div>
+    </section>
 
-        <div className="Inspirador">
-          <video className="video-player" controls>
-          <source src="ruta-del-video.mp4" type="video/mp4" />
-          Tu navegador no soporta videos pobre :V.
-          </video>
-        </div>
-        <p className='Voces'>Otras voces</p>
+
+      {/* Formulario */}
+      <section className="contact-form">
+        <h2>Contáctanos</h2>
+        <form>
+          <div className="form-row">
+            <input type="text" placeholder="Nombre" />
+            <input type="text" placeholder="Apellido" />
+          </div>
+          <div className="form-row">
+            <input type="email" placeholder="Correo" />
+            <input type="tel" placeholder="Teléfono" />
+          </div>
+          <textarea placeholder="Mensaje"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
       </section>
     <section className="Testimonio">
         <div className='testimonio-div'><h2 className='Testimonio-style'>Testimonios </h2>

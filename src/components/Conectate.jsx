@@ -6,7 +6,7 @@ import TypingAnimation from "../components/magicui/typing-animation";
 
 const Conectate =()=>{
     return (
-      <section className="conectate-container relative bg-cover bg-center bg-no-repeat">
+      <section className="conectate-container relative bg-cover bg-center bg-no-repeat" id='Seccion-Inicio'>
         <div className="fondo-nigth absolute inset-0"></div>
         <div className="main-content relative flex items-center">
           <div className="text-container max-w-xl">

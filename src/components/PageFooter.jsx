@@ -30,6 +30,11 @@ const PageFooter = () => {
     ];
 
     return (
+        <footer className="bg-black" id='Seccion-Contacto'>
+            <div className="content-footer m-auto">
+                <div className="content-logos-footer flex justify-between ">
+                    <div className="mime-logo">
+                        <img src={mime} alt="MIME"/>
         <footer className="bg-black text-white py-8">
             <div className="container mx-auto px-6">
                 {/* Logo Section */}
