@@ -9,7 +9,7 @@ const NuestrosProyectos = () => {
   
   const [currentIndex, setCurrentIndex] = useState(0);
   
-  const sliderImages = [HolaIA, IA1, IA2, IA4]; 
+  const sliderImages = [HolaIA, IA1]; 
   
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderImages.length);
