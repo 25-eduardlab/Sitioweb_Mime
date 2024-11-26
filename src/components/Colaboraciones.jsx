@@ -101,7 +101,7 @@ const Colaboraciones = () => {
         <div className="left cursor-pointer transition " >
           <FaAngleLeft size = "4.5rem" onClick={scrollLeft}/>
         </div>
-        <div className="carrusel-items flex" ref={carouselRef}>
+        <div className="carrusel-items" ref={carouselRef}>
           {logos.map((logo, index) => (
           <img key={index} src={logo.src} alt={logo.alt} className="logo cursor-pointer" />
         ))}

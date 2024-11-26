@@ -36,12 +36,12 @@
   overflow: hidden;
   border-radius: 20px;
   justify-content: center;
-  width: 90%; /* Ajusta el ancho del carrusel */
+  width: 100%; /* Ajusta el ancho del carrusel */
 }
 
 .logo {
   width: 400px; /* Ajusta el tamaño del logo */
-  height: auto;
+  height: 300px;
   object-fit: contain; /* Mantiene las proporciones del logo */
   transition: transform 0.3s ease;
 }
@@ -52,13 +52,12 @@
 
 .left, .rigth {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
   border: none;
-  color: rgba(255, 255, 255, 0.5); /* Transparente */
+  color: rgba(255, 255, 255, 0.452); /* Transparente */
   cursor: pointer;
-  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.151);
+  border-radius: 100%;
+  z-index: 1;
 }
 
 .left {
@@ -72,6 +71,7 @@
 .left:hover, .rigth:hover {
   transform: scale(1.25); /* Efecto de agrandamiento al pasar el mouse */
   color: white;
+  background-color: rgba(255, 255, 255, 0.356);
 }
 
 @keyframes mover-gradiente {
@@ -92,9 +92,9 @@
     display: none; /* Oculta las flechas en pantallas pequeñas */
   }
   .carrusel-items {
-    gap: 2rem;
+    gap: 1rem;
   }
   .logo {
-    max-width: 80px; /* Ajusta el tamaño de los logos en dispositivos móviles */
+    max-width: 200px; /* Ajusta el tamaño de los logos en dispositivos móviles */
   }
 }
