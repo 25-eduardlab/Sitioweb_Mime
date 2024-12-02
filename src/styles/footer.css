@@ -7,20 +7,20 @@ footer {
     text-align: center;
     position: relative;
     border-top: 1px solid #333; /* Borde superior */
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(30px); /* Desplazado hacia abajo */
+    animation: fadeInUp 1s forwards ease-out; /* Animación de aparición */
 }
 
-/* Efecto de aparición suave para el footer */
-footer {
-    opacity: 0;
-    animation: fadeIn 1.2s forwards ease-in-out;
-}
-
-@keyframes fadeIn {
+/* Animación de Fade-in con desplazamiento hacia arriba */
+@keyframes fadeInUp {
     0% {
         opacity: 0;
+        transform: translateY(30px);
     }
     100% {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -28,12 +28,17 @@ footer {
 .mime-logo img {
     height: 4rem; /* Tamaño de logo más elegante */
     margin-bottom: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    border-radius: 50%; /* Bordes redondeados para el logo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    filter: grayscale(0%); /* El logo empieza sin filtro de color */
 }
 
+/* Efecto de hover en el logo */
 .mime-logo img:hover {
     transform: scale(1.1); /* Aumenta ligeramente el logo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+    filter: grayscale(20%); /* El logo toma un leve filtro de color */
 }
 
 /* Títulos de las Secciones */
@@ -88,10 +93,17 @@ footer p {
     margin-top: 2rem;
 }
 
+/* Línea encima de las políticas */
+.linea-before-politicas {
+    width: 100%; /* Línea completa */
+    border-top: 2px solid #333; /* Línea antes de las políticas */
+    margin-bottom: 1.5rem; /* Separación debajo de la línea */
+}
+
 /* Estilo para las políticas y los iconos sociales */
 .footer-links .politicas-social-icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centra las políticas y los iconos */
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -99,7 +111,11 @@ footer p {
 /* Políticas de Privacidad */
 .footer-links .politicas {
     display: flex;
+    justify-content: center; /* Centrar las políticas */
     gap: 2rem;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto */
+    margin-top: 2rem; /* Separación superior */
 }
 
 .footer-links .politicas a {
@@ -115,61 +131,19 @@ footer p {
 /* Estilos de los iconos de redes sociales */
 footer .social-icons {
     display: flex;
-    justify-content: center; /* Centra los iconos */
-    gap: 1rem; /* Reducido el espacio entre los íconos */
-    margin-top: 1rem; /* Agrega un pequeño margen superior */
-    flex-wrap: wrap; /* Permite que los íconos se ajusten si no caben */
+    justify-content: flex-start; /* Los íconos a la izquierda */
+    gap: 1rem; /* Espacio entre los íconos */
+    margin-top: 0.5rem; /* Espaciado pequeño superior */
+    align-items: center;
 }
 
+/* Efecto en los iconos sociales */
 footer .social-icons a {
-    font-size: 2rem; /* Tamaño estándar de los íconos */
-    color: #b0b0b0;
+    color: white;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 footer .social-icons a:hover {
-    transform: translateY(-5px); /* Efecto de elevación */
-    color: #fd1f1f; /* Rojo en hover */
-}
-
-/* Iconos individuales de Redes Sociales */
-footer .social-icons a.facebook:hover {
-    color: #1877f2; /* Color de Facebook */
-}
-
-footer .social-icons a.instagram:hover {
-    color: #e1306c; /* Color de Instagram */
-}
-
-footer .social-icons a.whatsapp:hover {
-    color: #25d366; /* Color de WhatsApp */
-}
-
-footer .social-icons a.gmail:hover {
-    color: #ea4335; /* Color de Gmail */
-}
-
-/* Responsividad para pantallas pequeñas */
-@media (max-width: 768px) {
-    footer .social-icons {
-        flex-direction: row; /* Los iconos de redes sociales deben estar en fila */
-        gap: 1rem; /* Espacio más pequeño entre los iconos */
-        width: auto; /* El ancho no debe ser forzado */
-        justify-content: space-around; /* Ajusta los íconos para que se distribuyan mejor */
-    }
-
-    /* Hacer los íconos más pequeños en pantallas pequeñas */
-    footer .social-icons a {
-        font-size: 1.5rem; /* Reducir tamaño de los íconos */
-    }
-
-    footer .politicas-social-icons {
-        flex-direction: column; /* Coloca las políticas y los iconos uno debajo del otro */
-        align-items: center;
-        gap: 2rem; /* Espacio entre las políticas y los iconos sociales */
-    }
-
-    footer .politicas {
-        margin-bottom: 1rem; /* Añadir un pequeño margen inferior para separación */
-    }
+    transform: scale(1.1); /* Efecto de aumento en hover */
+    color: #fd1f1f; /* Cambia el color en hover */
 }

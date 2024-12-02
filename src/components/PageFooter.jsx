@@ -15,7 +15,7 @@ const PageFooter = () => {
             ],
         },
         {
-            title: "ESTAMOS UBICADOS EN :",
+            title: "ESTAMOS UBICADOS EN:",
             links: [
                 <span className="text-sm">CAL. LA MALVA NRO. 195 DPTO. S01 URB. LIMA POLO AND HUNT CLUB (TORRE C2) LIMA - LIMA - SANTIAGO DE SURCO</span>
             ],
@@ -23,8 +23,20 @@ const PageFooter = () => {
         {
             title: "SIGUENOS",
             links: [
-                <a href="https://www.facebook.com/profile.php?id=61558382890813" target="_blank" rel="noreferrer">Facebook: Mime Consultores</a>, 
-                <a href="https://www.instagram.com/mimeconsultores?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer">Instagram: mimeconsultores</a>
+                <div className="social-icons flex items-center gap-4">
+                    <a href="https://www.facebook.com/profile.php?id=61558382890813" target="_blank" rel="noreferrer" className="text-blue-600 hover:text-blue-800">
+                        <FaFacebook size="2rem" />
+                    </a>
+                    <a href="https://www.instagram.com/mimeconsultores" target="_blank" rel="noreferrer" className="text-gradient bg-gradient-to-tr from-[#405de6] via-[#5b51db] via-[#b33ab4] via-[#c135b4] via-[#e1306c] to-[#fd1f1f] hover:text-purple-600">
+                        <FaInstagram size="2rem" />
+                    </a>
+                    <a href="https://wa.me/51981247907" target="_blank" rel="noreferrer" className="text-green-600 hover:text-green-800">
+                        <FaWhatsapp size="2rem" />
+                    </a>
+                    <a href="mailto:contacto@mimeperu.com" rel="noreferrer" className="text-red-700 hover:text-red-800">
+                        <BiLogoGmail size="2rem" />
+                    </a>
+                </div>
             ],
         },
     ];
@@ -35,12 +47,6 @@ const PageFooter = () => {
                 <div className="content-logos-footer flex justify-between ">
                     <div className="mime-logo">
                         <img src={mime} alt="MIME"/>
-        <footer className="bg-black text-white py-8">
-            <div className="container mx-auto px-6">
-                {/* Logo Section */}
-                <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-                    <div className="mime-logo mb-6 md:mb-0">
-                        <img src={mime} alt="MIME Logo" className="h-16" />
                     </div>
                 </div>
 
@@ -60,10 +66,11 @@ const PageFooter = () => {
                     ))}
                 </div>
 
-                {/* Policies and Social Icons */}
+                {/* Línea encima de las políticas */}
                 <div className="footer-links">
-                    <div className="politicas-social-icons flex flex-wrap justify-between items-center gap-10 mb-12"> {/* Added mb-12 to give more space */}
-                        {/* Políticas de Privacidad */}
+                    <div className="linea-before-politicas"></div> {/* Línea encima de las políticas */}
+                    <div className="politicas-social-icons flex justify-between items-center gap-10 mb-12">
+                        {/* Políticas */}
                         <div className="politicas flex gap-12">
                             <a href="/politica-de-cookies" className="text-white hover:text-gray-400 text-lg">
                                 Política de Cookies
@@ -72,25 +79,10 @@ const PageFooter = () => {
                                 Política de Privacidad
                             </a>
                         </div>
-                        {/* Redes Sociales */}
-                        <div className="social-icons flex justify-center gap-12">
-                            <a href="https://www.facebook.com/profile.php?id=61558382890813" target="_blank" rel="noreferrer" className="text-blue-600 hover:text-blue-800">
-                                <FaFacebook size="1.5rem" />
-                            </a>
-                            <a href="https://www.instagram.com/mimeconsultores?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer" className="text-gradient bg-gradient-to-tr from-[#405de6] via-[#5b51db] via-[#b33ab4] via-[#c135b4] via-[#e1306c] to-[#fd1f1f] hover:text-purple-600">
-                                <FaInstagram size="1.5rem" />
-                            </a>
-                            <a href="https://wa.me/51981247907" target="_blank" rel="noreferrer" className="text-green-600 hover:text-green-800">
-                                <FaWhatsapp size="1.5rem" />
-                            </a>
-                            <a href="mailto:contacto@mimeperu.com" rel="noreferrer" className="text-red-700 hover:text-red-800">
-                                <BiLogoGmail size="1.5rem" />
-                            </a>
-                        </div>
                     </div>
                 </div>
 
-                {/* About Us Section */}
+                {/* Sección Sobre Nosotros */}
                 <div className="about mt-6 text-center">
                     <p className="text-sm text-gray-400">
                         Somos una empresa dedicada a ofrecer soluciones innovadoras en consultoría empresarial. 
@@ -98,7 +90,7 @@ const PageFooter = () => {
                     </p>
                 </div>
 
-                {/* Footer Text */}
+                {/* Textos del Footer */}
                 <div className="mt-6 border-t-2 border-gray-700 pt-4 text-left">
                     <p className="text-sm text-gray-400">Todos los derechos reservados</p>
                     <p className="text-sm text-gray-400">MIMECONSULTORESSAC.COM</p>
