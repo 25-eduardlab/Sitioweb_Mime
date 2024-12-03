@@ -7,6 +7,14 @@ import AI1  from'../img/Servicios.jpg'
 import AI2  from'../img/infraestructura.jpeg'
 import AI3  from'../img/Aplicaciones.jpg'
 import AI4  from'../img/Distribucion.jpg'
+import AA1 from '../img/Servicios1.jpg'
+import AA2 from '../img/Servicios2.jpg'
+import BB1 from '../img/infra1.jpg'
+import BB2 from '../img/infra2.jpg'
+import CC1 from '../img/app1.jpg'
+import CC2 from '../img/app2.jpg'
+import DD1 from '../img/dis1.jpg'
+import DD2 from '../img/dis2.jpg'
 import {  Modal,   ModalContent,   ModalHeader,   ModalBody,   ModalFooter, useDisclosure,Button} from "@nextui-org/react";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -21,8 +29,8 @@ const Ofrecemos = () => {
       mainImg: AI1,
       images: [
         AI1,
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600'
+        AA1,
+        AA2
       ],
       modalDescription: 'Descripcion detallada de los servicios TI que ofrecemos..'
     },
@@ -32,8 +40,8 @@ const Ofrecemos = () => {
       mainImg: AI2,
       images: [
         AI2,
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600'
+        BB1,
+        BB2
 
       ],
       modalDescription: 'Descripcion detallada de la Infraestructura TI que ofrecemos..'
@@ -44,8 +52,8 @@ const Ofrecemos = () => {
       mainImg: AI3,
       images: [
         AI3,
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600'
+        CC1,
+        CC2
       ],
       modalDescription: 'Descripcion detallada de las Aplicaciones TI que ofrecemos..'
     },
@@ -55,8 +63,8 @@ const Ofrecemos = () => {
       mainImg: AI4,
       images: [
         AI4,
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600'
+        DD1,
+        DD2
       ],
       modalDescription: 'Descripcion detallada de nuestra distribucion de equipos..'
     },
